@@ -50,6 +50,8 @@ FitAI Challenge is an intelligent sports training platform that applies an AWS S
 The system’s goal is to record workout data, analyze performance, and generate AI-powered feedback to provide personalized coaching for users.
 Data from the web application is sent to Amazon API Gateway, processed by AWS Lambda (Java), and stored in Amazon S3 along with the Docker Database.
 
+![FitAI Challenge Architecture](/images/2-Proposal/FitAI_Challenge_Architecture.png)
+
 ![FitAI Challenge Architecture](https://github.com/phamvunhatminh/AWS-FCJ-Workshop/blob/main/static/images/2-Proposal/FitAI_Challenge_Architecture.png?raw=true)
 
 ### AWS Services Used
@@ -152,3 +154,4 @@ Or you can download the [Budget Estimation File](../attachments/budget_estimatio
 - Build a community of Vietnamese users who are passionate about sports and sustainable health.
 
 - Become the pioneering “AI + Fitness + Gamification” platform in Vietnam.
+
