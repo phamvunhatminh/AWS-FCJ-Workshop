@@ -1,0 +1,8 @@
+# macOS system files
+.DS_Store
+
+# Hugo build output
+public/
+
+# Lock files
+.hugo_build.lock
