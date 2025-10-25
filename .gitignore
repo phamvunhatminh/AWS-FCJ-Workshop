@@ -2,7 +2,19 @@
 .DS_Store
 
 # Hugo build output
-public/
-
-# Lock files
+/public/
+/resources/
+/hugo_stats.json
 .hugo_build.lock
+
+# IDE / editor
+.vscode/
+.idea/
+
+# Node or frontend stuff (nếu bạn dùng theme có npm)
+node_modules/
+package-lock.json
+npm-debug.log
+
+# Logs
+*.log
