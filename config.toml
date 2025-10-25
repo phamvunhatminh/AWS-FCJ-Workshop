@@ -1,6 +1,8 @@
 baseURL = "https://phamvunhatminh.github.io/AWS-FCJ-Workshop/"
 relativeURLs = false
 canonifyURLs = true
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
 
 # Change the default theme to be use when building the site with Hugo
 theme = "hugo-theme-learn"
