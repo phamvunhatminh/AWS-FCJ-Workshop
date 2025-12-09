@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-Trong suốt thời gian thực tập tại **Amazon Web Services Việt Nam** từ **08/09/2025** đến **09/12/2025**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
+Trong suốt thời gian thực tập tại **Amazon Web Services Việt Nam** từ **08/09/2025** đến **08/12/2025**, tôi đã có cơ hội học hỏi, rèn luyện và áp dụng kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế.  
 Tôi đã tham gia thực hiện **dự án FitAI Challenge cùng với nhóm, đây là một dự án Web App giúp người dùng luyện tập, theo dõi sức khỏe có tích hợp AI**, qua đó cải thiện kỹ năng **lập trình, giải quyết vấn đề, viết báo cáo và làm việc nhóm**.  
 
 Về tác phong, tôi luôn cố gắng hoàn thành tốt nhiệm vụ, tuân thủ nội quy, và tích cực trao đổi với đồng nghiệp để nâng cao hiệu quả công việc.

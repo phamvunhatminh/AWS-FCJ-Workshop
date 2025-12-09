@@ -5,7 +5,7 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-During my internship at **Amazon Web Services Vietnam** from **08/09/2025** to **09/12/2025**, I had the opportunity to learn, practice, and apply the knowledge acquired at school to a real-world working environment.  
+During my internship at **Amazon Web Services Vietnam** from **08/09/2025** to **08/12/2025**, I had the opportunity to learn, practice, and apply the knowledge acquired at school to a real-world working environment.  
 I participated in the **FitAI Challenge project with the team — a web application that helps users exercise and track health with integrated AI**, through which I improved my skills in **programming, problem solving, reporting, and teamwork**.  
 
 In terms of work ethic, I always strived to complete tasks well, complied with workplace regulations, and actively engaged with colleagues to improve work efficiency.
