@@ -7,48 +7,59 @@ pre: " <b> 1.8. </b> "
 
 ### Mục tiêu tuần 8:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Tìm hiểu Amazon DynamoDB - dịch vụ cơ sở dữ liệu NoSQL được quản lý hoàn toàn
+* Thực hành lập trình với Amazon DynamoDB sử dụng Python
+* Tìm hiểu Amazon ElastiCache - dịch vụ caching in-memory
+* Thực hành Redis trên ElastiCache
+* Tìm hiểu Amazon CloudFront - dịch vụ phân phối nội dung (CDN)
+* Thực hành lưu trữ nội dung tĩnh trên S3 với CloudFront acceleration
+* Đảm bảo kiến trúc phù hợp với AWS Well-Architected Framework
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Tìm hiểu Amazon DynamoDB (NoSQL database) <br>&emsp; + Khái niệm Tables, Items, Attributes <br>&emsp; + Primary Key (Partition & Sort Key) <br>&emsp; + Read/Write Capacity Units <br>&emsp; + Billing Model <br> - Tìm hiểu Python SDK boto3 cho DynamoDB | 27/10/2025   | 27/10/2025      |
+| 3   | - **Thực hành DynamoDB với Python:** <br>&emsp; + Cài đặt boto3 library <br>&emsp; + Tạo DynamoDB table <br>&emsp; + Put Item (ghi dữ liệu) <br>&emsp; + Get Item (đọc dữ liệu) <br>&emsp; + Query và Scan operations <br>&emsp; + Update/Delete Item | 28/10/2025   | 28/10/2025      |
+| 4   | - Tìm hiểu Amazon ElastiCache <br>&emsp; + Redis cache engine <br>&emsp; + Node types và Cluster configuration <br>&emsp; + TTL (Time To Live) <br>&emsp; + Cache invalidation <br> - Tìm hiểu use cases của caching | 29/10/2025   | 29/10/2025      |
+| 5   | - **Thực hành ElastiCache-Redis:** <br>&emsp; + Tạo ElastiCache cluster (Redis) <br>&emsp; + Kết nối tới Redis endpoint <br>&emsp; + Set/Get key-value <br>&emsp; + Expire commands <br>&emsp; + Monitor performance <br> - Tìm hiểu Redis data structures | 30/10/2025   | 30/10/2025      |
+| 6   | - Tìm hiểu Amazon CloudFront (CDN) <br>&emsp; + Origins (S3, Custom, ELB) <br>&emsp; + Distributions <br>&emsp; + Edge locations <br>&emsp; + Cache behaviors <br> - **Thực hành:** <br>&emsp; + Tạo S3 bucket và upload index.html <br>&emsp; + Tạo CloudFront Distribution <br>&emsp; + Cấu hình IAM permissions <br>&emsp; + Test caching và acceleration | 31/10/2025   | 31/10/2025      |
 
 
 ### Kết quả đạt được tuần 8:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thứ 2 (27/10/2025):
+	* Hiểu Amazon DynamoDB là NoSQL được quản lý hoàn toàn
+	* Khái niệm DynamoDB: Tables, Items, Attributes; Primary Key gồm Partition Key (bắt buộc) và Sort Key (tùy chọn)
+	* Mô hình tính phí: RCU, WCU; chế độ On‑Demand vs Provisioned
+	* Nắm Python boto3 SDK cho DynamoDB
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thứ 3 (28/10/2025):
+	* Cài đặt boto3: `pip install boto3`
+	* Thực hành tạo bảng (khóa, capacity)
+	* Thực hành Put, Get, Query, Scan, Update, Delete
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thứ 4 (29/10/2025):
+	* Hiểu Amazon ElastiCache (caching in‑memory được quản lý)
+	* Redis cơ bản và data types
+	* Node types và cấu hình cluster
+	* TTL và cache invalidation
+	* Use case: session storage, leaderboards, counters, hot data
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Thứ 5 (30/10/2025):
+	* Tạo ElastiCache (Redis) cluster
+	* Kết nối với `redis-py`
+	* Thực hành Set/Get, Exists, Expire/TTL
+	* Theo dõi hiệu năng; ôn eviction policies và hit/miss ratio
+	* Ôn cấu trúc Redis: Lists, Sets, Sorted Sets, Hashes
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Thứ 6 (31/10/2025):
+	* Hiểu Amazon CloudFront (CDN): tăng tốc qua edge locations
+	* Origins: S3, Custom (EC2/ELB), MediaStore
+	* Distributions: Web và RTMP
+	* Edge locations và caching gần người dùng
+	* Cache behaviors: path patterns, TTLs, allowed methods, compression
+	* Thực hành S3 static website và CloudFront OAI
+	* Kiểm tra caching (X‑Cache), theo dõi CloudWatch, so sánh S3 vs CloudFront
+	* Well‑Architected: Reliability, Performance, Cost, Security
 
 

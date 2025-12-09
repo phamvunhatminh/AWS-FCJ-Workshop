@@ -7,47 +7,74 @@ pre: " <b> 1.6. </b> "
 
 ### Mục tiêu tuần 6:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai ứng dụng sử dụng Auto Scaling Group (ASG)
+* Tìm hiểu Elastic Load Balancer (ELB) và cân bằng tải
+* Khởi tạo Launch Template cho ASG
+* Tìm hiểu Amazon CloudWatch - dịch vụ theo dõi và quản lý
+* Tìm hiểu CloudWatch Container Insights
+* Thực hành triển khai toàn bộ giải pháp scaling và load balancing
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Giới thiệu Auto Scaling Group (ASG) <br>&emsp; + Lợi ích của ASG <br>&emsp; + Tính sẵn sàng cao và mở rộng linh hoạt <br>&emsp; + Tiết kiệm chi phí <br> - Giới thiệu Elastic Load Balancer                                            | 13/10/2025   | 13/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Tìm hiểu Launch Template <br>&emsp; + Tạo Launch Template từ EC2 instance <br>&emsp; + Cấu hình Launch Template <br> - **Thực hành:** <br>&emsp; + Khởi tạo Launch Template <br>&emsp; + Cấu hình Security Groups | 14/10/2025   | 14/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Thiết lập Elastic Load Balancer <br>&emsp; + Giới thiệu Load Balancer types <br>&emsp; + Cấu hình Health Checks <br>&emsp; + Cấu hình Target Groups <br> - **Thực hành:** <br>&emsp; + Tạo ELB và Target Groups | 15/10/2025   | 15/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Khởi tạo Auto Scaling Group <br>&emsp; + Cấu hình ASG policies (scale up/down) <br>&emsp; + Thiết lập metrics dựa trên CloudWatch <br>&emsp; + Kết nối ASG với Load Balancer <br> - Tìm hiểu Amazon CloudWatch                  | 16/10/2025   | 16/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Thực hành tổng hợp:** <br>&emsp; + Tạo Launch Template <br>&emsp; + Tạo Elastic Load Balancer <br>&emsp; + Khởi tạo Auto Scaling Group <br>&emsp; + Kiểm thử scaling (increase/decrease load) <br>&emsp; + Theo dõi CloudWatch metrics                                                                                         | 17/10/2025   | 17/10/2025      | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Kết quả đạt được tuần 6:
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* **Thứ 2 (13/10/2025):**
+  * Hiểu Auto Scaling Group (ASG) và các lợi ích chính:
+    * Tính sẵn sàng cao - thay thế instance bị lỗi tự động
+    * Khả năng mở rộng linh hoạt - tăng/giảm số lượng instance dựa trên nhu cầu
+    * Phân phối tải hiệu quả với Elastic Load Balancer
+    * Tiết kiệm chi phí - chỉ sử dụng đúng số lượng tài nguyên cần thiết
+    * Tự động hóa cao
+  * Hiểu Elastic Load Balancer và vai trò trong hệ thống
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* **Thứ 3 (14/10/2025):**
+  * Tìm hiểu Launch Template:
+    * Khái niệm và mục đích của Launch Template
+    * Cách tạo Launch Template từ EC2 instance hiện có
+    * Cấu hình Launch Template (AMI, Instance Type, Key Pair, Security Groups)
+  * Thực hành khởi tạo Launch Template
+  * Cấu hình Security Groups cho Launch Template
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* **Thứ 4 (15/10/2025):**
+  * Tìm hiểu Elastic Load Balancer:
+    * Các loại Load Balancer (ALB, NLB, CLB)
+    * Health Checks - kiểm tra tình trạng instance
+    * Target Groups - nhóm instance nhận traffic
+    * Routing rules
+  * Thực hành tạo Elastic Load Balancer
+  * Cấu hình Target Groups
+  * Kiểm thử Load Balancer hoạt động
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
+* **Thứ 5 (16/10/2025):**
+  * Khởi tạo Auto Scaling Group:
+    * Cấu hình min/max/desired capacity
+    * Cấu hình scaling policies (scale up/down)
+    * Thiết lập metrics dựa trên CloudWatch (CPU, RAM, Network)
+    * Kết nối ASG với Load Balancer
+  * Hiểu Amazon CloudWatch:
+    * Dịch vụ theo dõi và quản lý
+    * Metrics và Logs
+    * Lưu trữ dữ liệu 15 tháng
+    * Tính toán trên metrics
+  * Tìm hiểu CloudWatch Container Insights
 
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* **Thứ 6 (17/10/2025):**
+  * Thực hành tổng hợp triển khai toàn bộ giải pháp:
+    * Tạo Launch Template từ ứng dụng FCJ Management
+    * Tạo Elastic Load Balancer với Health Checks
+    * Khởi tạo Auto Scaling Group
+    * Kiểm thử scaling - tăng tải để ASG tự động tăng instance
+    * Kiểm thử scaling - giảm tải để ASG tự động giảm instance
+    * Theo dõi CloudWatch metrics (CPU, Network, request count)
+    * Xác minh cân bằng tải - yêu cầu được phân phối đều giữa các instance
+    * Dọn dẹp tài nguyên (ASG, Load Balancer, Launch Template)
 
 

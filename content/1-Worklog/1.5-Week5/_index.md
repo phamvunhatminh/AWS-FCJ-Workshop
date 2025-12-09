@@ -7,46 +7,68 @@ pre: " <b> 1.5. </b> "
 
 ### Week 5 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Learn Amazon Relational Database Service (Amazon RDS)
+* Understand the key benefits of a managed database service
+* Learn the database engines supported by RDS
+* Learn RDS management, security, and encryption features
+* Understand Multi-AZ, Read Replicas, DB Snapshots, and recovery strategies
+* Practice creating and managing RDS instances
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date | Reference Material |
+| --- | ---- | ---------- | --------------- | ------------------ |
+| 2   | - Introduction to Amazon RDS <br>&emsp; + What RDS is and key benefits <br>&emsp; + Supported DB engines <br>&emsp; + When to use RDS vs other services | 06/10/2025 | 06/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 3   | - Learn RDS management features <br>&emsp; + Automated backups and patching <br>&emsp; + Easy scaling <br>&emsp; + DB Subnet Groups <br> - **Practice:** <br>&emsp; + Create VPC and DB Subnet Group | 07/10/2025 | 07/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 4   | - Learn RDS security and encryption <br>&emsp; + Encryption at rest <br>&emsp; + SSL/TLS encryption in transit <br>&emsp; + AWS KMS integration <br> - **Practice:** <br>&emsp; + Create an encrypted RDS instance | 08/10/2025 | 08/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 5   | - Learn Multi-AZ, Read Replicas, and DR: <br>&emsp; + Multi-AZ for high availability <br>&emsp; + Read Replicas for read scaling <br>&emsp; + DB Snapshots and restore <br> - Disaster recovery strategies | 09/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
+| 6   | - **Integrated practice:** <br>&emsp; + Create an RDS instance (MySQL/PostgreSQL) <br>&emsp; + Configure Multi-AZ <br>&emsp; + Create Read Replicas <br>&emsp; + Create DB Snapshots and test restore | 10/10/2025 | 10/10/2025 | <https://cloudjourney.awsstudygroup.com/> |
 
 
 ### Week 5 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Monday (06/10/2025):
+  * Understood Amazon RDS as a managed relational database service
+  * Key benefits of RDS:
+    * Easy replacement for self-managed DB instances
+    * Automated backups and patching
+    * Easy scaling
+  * Supported engines: Aurora, MySQL, MariaDB, Oracle, SQL Server, PostgreSQL
+  * When to use RDS vs EC2, DynamoDB, Redshift, Neptune, ElastiCache
 
-* Successfully created and configured an AWS Free Tier account.
+* Tuesday (07/10/2025):
+  * RDS management features:
+    * Security and automatic patching
+    * Automated backups
+    * DB engine software updates
+    * Storage and compute scaling
+  * Learned DB Subnet Groups
+  * Practiced creating a VPC and DB Subnet Group
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Wednesday (08/10/2025):
+  * Encryption in RDS:
+    * Encryption at rest using AWS KMS
+    * SSL/TLS encryption in transit
+    * Encryption for snapshots, backups, and read replicas
+  * Noted: existing DBs cannot be encrypted directly (must recreate from snapshot)
+  * Practiced creating an encrypted RDS instance
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Thursday (09-10/10/2025):
+  * Multi-AZ deployments:
+    * Synchronous replication for high availability
+    * Automatic failover
+    * AZ failure protection
+  * Read Replicas:
+    * Asynchronous replication
+    * Read scaling
+    * Cross-AZ or Cross-Region options
+    * Up to 5 read replicas per DB
+  * DB Snapshots and restore
+  * Disaster Recovery (DR) strategy
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Friday (10/10/2025):
+  * Created an RDS instance (MySQL or PostgreSQL)
+  * Configured Multi-AZ for high availability
+  * Created Read Replicas for read scaling
+  * Created and managed DB Snapshots
+  * Tested restore from snapshot
+  * Understood RDS monitoring, maintenance windows, and billing

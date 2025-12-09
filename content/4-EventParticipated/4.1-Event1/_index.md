@@ -5,139 +5,133 @@ chapter: false
 pre: " <b> 4.1. </b> "
 ---
 
-# Summary Report: “GenAI-powered App-DB Modernization workshop”
+# Summary Report: “Viet Nam Cloud Day 2025”
 
 ### Event Objectives
 
-- Share best practices in modern application design
-- Introduce Domain-Driven Design (DDD) and event-driven architecture
-- Provide guidance on selecting the right compute services
-- Present AI tools to support the development lifecycle
+- Activate and accelerate AI + Cloud adoption across Vietnamese enterprises
+- Share knowledge and best practices from successful projects
+- Connect the tech community, enterprises, and startups
+- Move from vision to tangible business value
 
 ### Speakers
 
-- **Pham Duc Long** - Deputy Minister, Ministry of Science & Technology
-- **Marc E. Knapper** - U.S. Ambassador to Vietnam
-- **Eric Yeo** - Country General Manager, Vietnam, Cambodia, Laos & Myanmar, AWS
-- **Dr. Jens Lottner** - CEO, Techcombank
-- **Ms. Trang Phung** - CEO & Co-Founder, U2U Network
-- **Jaime Valles** - Vice President, General Manager Asia Pacific and Japan, AWS
-- **Jeff Johnson** - Managing Director, ASEAN, AWS (Moderator)
-- **Vu Van** - Co-founder & CEO, ELSA Corp
-- **Nguyen Hoa Binh** - Chairman, Nexttech Group
-- **Dieter Botha** - CEO, TymeX
-- **Jun Kai Loke** - AI/ML Specialist SA, AWS
-- **Kien Nguyen** - Solutions Architect, AWS
-- **Tamelly Lim** - Storage Specialist SA, AWS
-- **Binh Tran** - Senior Solutions Architect, AWS
-- **Taiki Dang** - Solutions Architect, AWS
-- **Michael Armentano** - Principal WW GTM Specialist, AWS
-- **Hung Nguyen Gia** - Head of Solutions Architect, AWS (Moderator & Opening Track 2)
-- **Son Do** - Technical Account Manager, AWS
-- **Nguyen Van Hai** - Director of Software Engineering, Techcombank
-- **Phuc Nguyen** - Solutions Architect, AWS
-- **Alex Tran** - AI Director, OCB
-- **Nguyen Minh Ngan** - AI Specialist, OCB
-- **Nguyen Manh Tuyen** - Head of Data Application, LPBank Securities
-- **Vinh Nguyen** - Co-Founder & CTO, Ninety Eight
-- **Hung Hoang** - Customer Solutions Manager, AWS
+- **Pham Duc Long** — Deputy Minister, Ministry of Science & Technology (Vietnam)
+- **Marc E. Knapper** — U.S. Ambassador to Vietnam
+- **Eric Yeo** — Country Director, Vietnam, Cambodia, Laos & Myanmar, AWS
+- **Dr. Jens Lottner** — CEO, Techcombank
+- **Ms. Trang Phung** — CEO & Co‑Founder, U2U Network
+- **Jaime Valles** — VP & GM, Asia Pacific & Japan, AWS
+- **Jeff Johnson** — Managing Director, ASEAN, AWS (Moderator)
+- **Vu Van** — Co‑founder & CEO, ELSA Corp
+- **Nguyen Hoa Binh** — Chairman, Nexttech Group
+- **Dieter Botha** — CEO, TymeX
+- **Jun Kai Loke** — AI/ML Specialist SA, AWS
+- **Kien Nguyen** — Solutions Architect, AWS
+- **Tamelly Lim** — Storage Specialist SA, AWS
+- **Binh Tran** — Senior Solutions Architect, AWS
+- **Taiki Dang** — Solutions Architect, AWS
+- **Michael Armentano** — Principal WW GTM Specialist, AWS
+- **Hung Nguyen Gia** — Head of Solutions Architects, AWS (Moderator & Track 2 Opening)
+- **Son Do** — Technical Account Manager, AWS
+- **Nguyen Van Hai** — Director of Software Engineering, Techcombank
+- **Phuc Nguyen** — Solutions Architect, AWS
+- **Alex Tran** — AI Director, OCB
+- **Nguyen Minh Ngan** — AI Specialist, OCB
+- **Nguyen Manh Tuyen** — Head of Data Applications, LPBank Securities
+- **Vinh Nguyen** — Co‑Founder & CTO, Ninety Eight
+- **Hung Hoang** — Customer Solutions Manager, AWS
 
 ### Key Highlights
 
-#### Identifying the drawbacks of legacy application architecture
+#### Morning Panel: Navigating the GenAI Revolution
 
-- Long product release cycles → Lost revenue/missed opportunities  
-- Inefficient operations → Reduced productivity, higher costs  
-- Non-compliance with security regulations → Security breaches, loss of reputation  
+- How business leaders navigate the Generative AI wave
+- Themes:
+	- Build a culture of innovation
+	- Align AI with business outcomes
+	- Manage organizational change when integrating AI
+- Security non‑compliance → incidents and reputational risk
 
-#### Transitioning to modern application architecture – Microservices
+#### Track 1: Gen AI and Data
 
-Migrating to a modular system — each function is an **independent service** communicating via **events**, built on three core pillars:
+- Build a unified data foundation for AI and advanced analytics
+- Generative AI adoption roadmap on AWS: services, strategies, and trends
+- AI‑Driven Development Lifecycle (AI‑DLC): infuse AI across the SDLC
+- Security for GenAI: infrastructure, model, and app; zero‑trust, encryption, access control
+- AI Agents: use AI as intelligent co‑workers to boost productivity
 
-- **Queue Management**: Handle asynchronous tasks  
-- **Caching Strategy**: Optimize performance  
-- **Message Handling**: Flexible inter-service communication  
+#### Track 2: Migration & Modernization
 
-#### Domain-Driven Design (DDD)
+- Large‑scale migration and modernization: lessons learned, AWS tooling, Techcombank case study
+- Modernizing apps with AI‑powered Q Developer:
+	- Auto‑generate code, docs, and unit tests
+	- Integrate AI into SDLC to accelerate delivery, improve quality and security
+- Panel: Application Modernization — real‑world sharing from OCB, LPBank Securities, Ninety Eight
+- Transform VMware with AI‑driven cloud: step‑by‑step migrate to AWS, minimize downtime, modernize services
+- AWS Security at scale: security from dev to prod; apply AI to enhance analysis and automation
 
-- **Four-step method**: Identify domain events → arrange timeline → identify actors → define bounded contexts  
-- **Bookstore case study**: Demonstrates real-world DDD application  
-- **Context mapping**: 7 patterns for integrating bounded contexts  
+### What I Learned
 
-#### Event-Driven Architecture
+#### Generative AI is central to the next digital transformation wave
 
-- **3 integration patterns**: Publish/Subscribe, Point-to-point, Streaming  
-- **Benefits**: Loose coupling, scalability, resilience  
-- **Sync vs async comparison**: Understanding the trade-offs  
+- AI doesn’t just change tech — it reshapes how companies operate and decide
+- Winners integrate AI into strategy, culture, and core products
+- From keynote to panels, the message is clear: AI is a strategic partner, not a mere tool
 
-#### Compute Evolution
+#### Data is the foundation — without good data, AI can’t be smart
 
-- **Shared Responsibility Model**: EC2 → ECS → Fargate → Lambda  
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value  
-- **Functions vs Containers**: Criteria for appropriate choice  
+- Build a unified, secure, and scalable data platform for AI
+- Data governance, quality, and connectivity are prerequisites for AI and analytics
+- Treat data as a strategic asset, not just technical input
 
-#### Amazon Q Developer
+#### Security and responsibility enable sustainable AI
 
-- **SDLC automation**: From planning to maintenance  
-- **Code transformation**: Java upgrade, .NET modernization  
-- **AWS Transform agents**: VMware, Mainframe, .NET migration  
-
-### Key Takeaways
-
-#### Design Mindset
-
-- **Business-first approach**: Always start from the business domain, not the technology  
-- **Ubiquitous language**: Importance of a shared vocabulary between business and tech teams  
-- **Bounded contexts**: Identifying and managing complexity in large systems  
-
-#### Technical Architecture
-
-- **Event storming technique**: Practical method for modeling business processes  
-- Use **event-driven communication** instead of synchronous calls  
-- **Integration patterns**: When to use sync, async, pub/sub, streaming  
-- **Compute spectrum**: Criteria for choosing between VM, containers, and serverless  
-
-#### Modernization Strategy
-
-- **Phased approach**: No rushing — follow a clear roadmap  
-- **7Rs framework**: Multiple modernization paths depending on the application  
-- **ROI measurement**: Cost reduction + business agility  
+- Security‑by‑Design from development to operations
+- Zero‑trust, encryption, and fine‑grained access control are mandatory
+- AI must be deployed responsibly, transparently, and for human value
 
 ### Applying to Work
 
-- **Apply DDD** to current projects: Event storming sessions with business teams  
-- **Refactor microservices**: Use bounded contexts to define service boundaries  
-- **Implement event-driven patterns**: Replace some sync calls with async messaging  
-- **Adopt serverless**: Pilot AWS Lambda for suitable use cases  
-- **Try Amazon Q Developer**: Integrate into the dev workflow to boost productivity  
+- Use Generative AI to boost productivity and creativity
+- Build and leverage a unified data platform on AWS
+- Bring an “AI‑first” mindset into business strategy
+- Strengthen security across every AI & Cloud phase
 
 ### Event Experience
 
-Attending the **“GenAI-powered App-DB Modernization”** workshop was extremely valuable, giving me a comprehensive view of modernizing applications and databases using advanced methods and tools. Key experiences included:
+Attending **“AWS Cloud Day 2025”** was truly meaningful. Beyond getting updated on the latest tech trends, I felt the strong momentum in how organizations are transforming with AI and cloud. The event provided a panoramic view of how leading organizations apply Generative AI, data, and security to reinvent operating models — inspiring practical ideas I can bring to my work. More than knowledge, I gained a refreshed mindset about creativity, effectiveness, and responsibility in AI deployment, along with motivation to keep learning to match the global tech pace. Highlights:
 
-#### Learning from highly skilled speakers
-- Experts from AWS and major tech organizations shared **best practices** in modern application design.  
-- Through real-world case studies, I gained a deeper understanding of applying **DDD** and **Event-Driven Architecture** to large projects.  
+#### Broadening vision on technology and future trends
 
-#### Hands-on technical exposure
-- Participating in **event storming** sessions helped me visualize how to **model business processes** into domain events.  
-- Learned how to **split microservices** and define **bounded contexts** to manage large-system complexity.  
-- Understood trade-offs between **synchronous and asynchronous communication** and integration patterns like **pub/sub, point-to-point, streaming**.  
+- Clearer view of the roles of GenAI, data, and security in enterprise strategy
+- AI is not a fad; it’s a core foundation for innovation and growth
+- Insight into AWS’s direction in Vietnam and Southeast Asia
 
-#### Leveraging modern tools
-- Explored **Amazon Q Developer**, an AI tool for SDLC support from planning to maintenance.  
-- Learned to **automate code transformation** and pilot serverless with **AWS Lambda** to improve productivity.  
+#### Networking and learning from leaders and experts
 
-#### Networking and discussions
-- The workshop offered opportunities to exchange ideas with experts, peers, and business teams, enhancing the **ubiquitous language** between business and tech.  
-- Real-world examples reinforced the importance of the **business-first approach** rather than focusing solely on technology.  
+- Direct insights from CEOs, founders, and AWS experts
+- Practical lessons on applying AI and cloud in finance, technology, and startups
+- Expanded network with people passionate about AI, data, and modernization
+
+#### New mindset to apply at work
+
+- How to integrate AI into daily workflows to raise efficiency and creativity
+- The necessity of a strong data foundation before deploying AI
+- Put security and governance at the heart of every initiative
+
+#### Inspiration to innovate and act
+
+- “Think Big, Build Smart” spirit from AWS and speakers
+- Proactive learning and experimentation with new technologies
+- Extra drive to promote digital transformation and practical AI adoption
 
 #### Lessons learned
-- Applying DDD and event-driven patterns reduces **coupling** while improving **scalability** and **resilience**.  
-- Modernization requires a **phased approach** with **ROI measurement**; rushing the process can be risky.  
-- AI tools like Amazon Q Developer can significantly **boost productivity** when integrated into the current workflow.  
+After AWS Cloud Day 2025, I realized technology creates value only when tied to strategy and people. AI, data, and security are now the three core pillars for sustainable innovation and growth. The key lesson: to harness AI’s power, start with a solid data foundation, an innovation mindset, and strong security and responsibility in every step.
 
 #### Some event photos
-*Add your event photos here*  
 
-> Overall, the event not only provided technical knowledge but also helped me reshape my thinking about application design, system modernization, and cross-team collaboration.
+![photo](/images/4-Event/E1-1.jpg)
+![photo](/images/4-Event/E1-2.jpg)
+![photo](/images/4-Event/E1-3.jpg)
+![photo](/images/4-Event/E1-4.jpg)

@@ -7,48 +7,44 @@ pre: " <b> 1.10. </b> "
 
 ### Mục tiêu tuần 10:
 
-* Kết nối, làm quen với các thành viên trong First Cloud Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+* Triển khai Mediapipe Pose Detection để theo dõi động tác thể dục
+* Nghiên cứu và phát triển thuật toán dựa trên tọa độ pose (skeleton tracking)
+* Kiểm tra và tinh chỉnh thuật toán để tối ưu hóa độ chính xác
+* Tìm hiểu Amazon Bedrock để tích hợp AI trả lời câu hỏi về sức khỏe
+* Tạo FE (Frontend) bằng TypeScript + React
+* Tích hợp real-time pose tracking vào web application
 
 ### Các công việc cần triển khai trong tuần này:
 | Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
 | --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| 2   | - Giới thiệu Mediapipe Pose Detection <br>&emsp; + Cài đặt Mediapipe library <br>&emsp; + Tạo script cơ bản pose tracking <br>&emsp; + Visualize tọa độ skeleton trên video <br> - Tìm hiểu pose landmarks (x, y, z coordinates) | 10/11/2025   | 10/11/2025      |
+| 3   | - Nghiên cứu thuật toán dựa trên tọa độ pose <br>&emsp; + Tính toán khoảng cách giữa các joints <br>&emsp; + Tính góc cổ tay (angles) <br>&emsp; + Nhận diện động tác (Push-up, Squat, Plank) <br> - **Thực hành:** <br>&emsp; + Viết code nhận diện Push-up | 11/11/2025   | 11/11/2025      |
+| 4   | - Tiếp tục phát triển thuật toán <br>&emsp; + Nhận diện Squat, Plank <br>&emsp; + Tính rep count (số lần lặp) cho mỗi bài tập <br>&emsp; + Tính thời gian thực hiện <br> - Kiểm tra và tinh chỉnh độ chính xác | 12/11/2025   | 12/11/2025      |
+| 5   | - Tìm hiểu Amazon Bedrock <br>&emsp; + Các available foundation models <br>&emsp; + Cách gọi Bedrock API <br>&emsp; + Tạo prompt cho health Q&A <br> - **Thực hành:** <br>&emsp; + Tạo chatbot trả lời câu hỏi sức khỏe | 13/11/2025   | 13/11/2025      |
+| 6   | - Tìm hiểu TypeScript và React <br>&emsp; + Setup React project với TypeScript <br>&emsp; + Tạo components cho pose tracking UI <br>&emsp; + Tích hợp Mediapipe vào React <br>&emsp; + Tạo form nhập dữ liệu, đăng ký, đăng nhập <br>&emsp; + Tích hợp Bedrock API cho Chatbot | 14/11/2025   | 14/11/2025      |
 
 
 ### Kết quả đạt được tuần 10:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Thứ 2 (10/11/2025):
+  * Hiểu Mediapipe Pose Detection — theo dõi pose bằng ML
+  * Cài đặt: `pip install mediapipe opencv-python`
+  * Xây script cơ bản (webcam/file), detect 33 landmarks (x, y, z)
+  * Visualize skeleton và xem confidence scores
 
-* Đã tạo và cấu hình AWS Free Tier account thành công.
+* Thứ 3 (11/11/2025):
+  * Phát triển thuật toán: khoảng cách khớp, góc khớp
+  * Nhận diện Push‑up bằng ngưỡng góc khuỷu tay; đếm rep theo chuyển trạng thái down→up
 
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
+* Thứ 4 (12/11/2025):
+  * Mở rộng Squat và Plank; đếm rep từng bài
+  * Tính thời lượng theo frames/FPS; tinh chỉnh ngưỡng, smoothing dữ liệu pose
 
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
+* Thứ 5 (13/11/2025):
+  * Tìm hiểu Amazon Bedrock; gọi Bedrock Runtime; tạo prompt chatbot sức khỏe
 
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
+* Thứ 6 (14/11/2025):
+  * Setup React + TypeScript; component UI pose tracking; tích hợp Mediapipe realtime
+  * Backend gọi Bedrock; hiển thị khuyến nghị; UI gồm navbar, profile, start workout, chatbot sidebar, dashboard
 
 

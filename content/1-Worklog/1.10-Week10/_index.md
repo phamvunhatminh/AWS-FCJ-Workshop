@@ -7,46 +7,51 @@ pre: " <b> 1.10. </b> "
 
 ### Week 10 Objectives:
 
-* Connect and get acquainted with members of First Cloud Journey.
-* Understand basic AWS services, how to use the console & CLI.
+* Implement Mediapipe Pose Detection for exercise tracking
+* Research and develop algorithms based on pose coordinates (skeleton tracking)
+* Test and tune algorithms for accuracy
+* Learn Amazon Bedrock and integrate AI for health Q&A
+* Build the frontend with TypeScript + React
+* Integrate real‑time pose tracking into the web app
 
 ### Tasks to be carried out this week:
-| Day | Task                                                                                                                                                                                                   | Start Date | Completion Date | Reference Material                        |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------- | --------------- | ----------------------------------------- |
-| 2   | - Get acquainted with FCJ members <br> - Read and take note of internship unit rules and regulations                                                                                                   | 08/11/2025 | 08/11/2025      |
-| 3   | - Learn about AWS and its types of services <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                              | 08/12/2025 | 08/12/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Create AWS Free Tier account <br> - Learn about AWS Console & AWS CLI <br> - **Practice:** <br>&emsp; + Create AWS account <br>&emsp; + Install & configure AWS CLI <br> &emsp; + How to use AWS CLI | 08/13/2025 | 08/13/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Learn basic EC2: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - SSH connection methods to EC2 <br> - Learn about Elastic IP   <br>                            | 08/14/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Practice:** <br>&emsp; + Launch an EC2 instance <br>&emsp; + Connect via SSH <br>&emsp; + Attach an EBS volume                                                                                     | 08/15/2025 | 08/15/2025      | <https://cloudjourney.awsstudygroup.com/> |
+| Day | Task | Start Date | Completion Date |
+| --- | ---- | ---------- | --------------- |
+| 2   | - Intro to Mediapipe Pose Detection <br>&emsp; + Install Mediapipe <br>&emsp; + Basic pose tracking script <br>&emsp; + Visualize skeleton on video <br> - Learn pose landmarks (x, y, z) | 10/11/2025 | 10/11/2025 |
+| 3   | - Research pose‑based algorithms <br>&emsp; + Distances between joints <br>&emsp; + Joint angles <br>&emsp; + Recognize Push‑up, Squat, Plank <br> - **Practice:** <br>&emsp; + Push‑up detection | 11/11/2025 | 11/11/2025 |
+| 4   | - Continue algorithm dev <br>&emsp; + Squat, Plank <br>&emsp; + Rep counting <br>&emsp; + Exercise duration <br> - Test and tune accuracy | 12/11/2025 | 12/11/2025 |
+| 5   | - Learn Amazon Bedrock <br>&emsp; + Available foundation models <br>&emsp; + Call Bedrock API <br>&emsp; + Prompting for health Q&A <br> - **Practice:** <br>&emsp; + Health Q&A chatbot | 13/11/2025 | 13/11/2025 |
+| 6   | - Learn TypeScript + React <br>&emsp; + Setup React TS project <br>&emsp; + Build pose tracking UI components <br>&emsp; + Integrate Mediapipe <br>&emsp; + Forms (register/login) <br>&emsp; + Integrate Bedrock API | 14/11/2025 | 14/11/2025 |
 
 
 ### Week 10 Achievements:
 
-* Understood what AWS is and mastered the basic service groups: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
+* Monday (10/11/2025):
+  * Understood Mediapipe Pose Detection — ML‑based pose tracking
+  * Installed Mediapipe: `pip install mediapipe opencv-python`
+  * Built a basic pose tracking script (webcam/file)
+  * Detected 33 pose landmarks (x, y, z)
+  * Visualized skeleton overlays and confidence scores
 
-* Successfully created and configured an AWS Free Tier account.
+* Tuesday (11/11/2025):
+  * Developed pose‑based algorithms:
+    * Distances between joints, joint angles
+    * Push‑up recognition via elbow angle thresholds
+    * Rep counting via down→up transitions
 
-* Became familiar with the AWS Management Console and learned how to find, access, and use services via the web interface.
+* Wednesday (12/11/2025):
+  * Extended to Squat and Plank; rep counting per exercise
+  * Measured exercise duration (frames/FPS; start/end time)
+  * Tuned thresholds; smoothed pose data across frames
 
-* Installed and configured AWS CLI on the computer, including:
-  * Access Key
-  * Secret Key
-  * Default Region
-  * ...
+* Thursday (13/11/2025):
+  * Learned Amazon Bedrock
+  * Called Bedrock Runtime and built health Q&A prompts
+  * Implemented a chatbot with context (calories, goals, exercises)
 
-* Used AWS CLI to perform basic operations such as:
-
-  * Check account & configuration information
-  * Retrieve the list of regions
-  * View EC2 service
-  * Create and manage key pairs
-  * Check information about running services
-  * ...
-
-* Acquired the ability to connect between the web interface and CLI to manage AWS resources in parallel.
-* ...
+* Friday (14/11/2025):
+  * Set up React + TypeScript
+  * Built components: PoseDetectionComponent, WorkoutSummary, ChatBot, Form
+  * Integrated Mediapipe in React (useRef/useEffect; realtime state)
+  * Added a backend endpoint to call Bedrock; displayed recommendations
+  * Built UI: navbar, profile, start workout, chatbot sidebar, dashboard

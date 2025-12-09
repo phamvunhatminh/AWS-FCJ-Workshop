@@ -5,22 +5,11 @@ chapter: false
 pre: " <b> 3. </b> "
 ---
 
-This section will list and introduce the blogs you have translated. For example:
+###  [Blog 1 — Resilience by design: Building an effective ransomware recovery strategy](3.1-Blog1/)
+Design cyber vaults on AWS to recover from ransomware: define Minimum Viable Business (MVB), set DTO/C‑RTO/C‑RPO, plan vault partitioning/governance, logistics and providers, and secure administration with IAM and zero‑trust.
 
-###  [Blog 1 - Getting started with healthcare data lakes: Using microservices](3.1-Blog1/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+###  [Blog 2 — Dynamic routing using Amazon VPC Route Server](3.2-Blog2/)
+Use BGP‑based dynamic routing to control VPC traffic paths, enable seamless AZ failover with floating IPs, and automatically update VPC/IGW route tables without manual intervention; includes scenarios and best practices.
 
-###  [Blog 2 - ...](3.2-Blog2/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
-
-###  [Blog 3 - ...](3.3-Blog3/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
-
-###  [Blog 4 - ...](3.4-Blog4/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
-
-###  [Blog 5 - ...](3.5-Blog5/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
-
-###  [Blog 6 - ...](3.6-Blog6/)
-This blog introduces how to start building a data lake in the healthcare sector by applying a microservices architecture. You will learn why data lakes are important for storing and analyzing diverse healthcare data (electronic medical records, lab test data, medical IoT devices…), how microservices help make the system more flexible, scalable, and easier to maintain. The article also guides you through the steps to set up the environment, organize the data processing pipeline, and ensure compliance with security & privacy standards such as HIPAA.
+###  [Blog 3 — Now open: AWS Asia Pacific Region (New Zealand)](3.3-Blog3/)
+Overview of the new ap‑southeast‑6 region: local data residency, connectivity investments, CloudFront edge locations, Local Zone, Direct Connect, compliance posture, and customer use cases accelerating AI with Amazon Bedrock.

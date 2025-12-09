@@ -116,7 +116,7 @@ Tham dự **"AWS Cloud Day 2025"** là một trải nghiệm thật sự ý ngh�
 
 #### Tiếp thu tư duy mới để áp dụng vào công việc
 
-- -Hiểu cách tích hợp AI vào quy trình làm việc hàng ngày nhằm tăng hiệu quả và sáng tạo.
+- Hiểu cách tích hợp AI vào quy trình làm việc hàng ngày nhằm tăng hiệu quả và sáng tạo.
 - Nhận ra tầm quan trọng của việc xây dựng nền tảng dữ liệu vững chắc trước khi triển khai AI.
 - Học được cách đưa bảo mật và quản trị vào trọng tâm của mọi sáng kiến công nghệ.
 
