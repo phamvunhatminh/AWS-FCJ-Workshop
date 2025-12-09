@@ -1,0 +1,1963 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.151.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="nhatminhob@gmail.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 2 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1765283266" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765283266" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765283266" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765283266" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765283266" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765283266" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765283266" rel="stylesheet">
+    <link href="../../../css/theme.css?1765283266" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765283266" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1765283266" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1765283266"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.2-blog2/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1765283266"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765283266"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/phamvunhatminh.github.io\/AWS-FCJ-Workshop\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1765283266"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12 </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/2-proposal/2.1-attachments/"
+  title="Phụ lục &amp; Tài liệu đính kèm"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/2.1-attachments/">
+     <b> 2.1. </b> Phụ lục &amp; Tài liệu đính kèm 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequisite/"
+  title="Chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequisite/">
+     <b> 5.2. </b> Chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-create-lambda-and-bedrock-call/"
+  title="Tạo Lambda và gọi Bedrock"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-create-lambda-and-bedrock-call/">
+     <b> 5.3. </b> Tạo Lambda và gọi Bedrock 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.1-create-lambda/"
+  title="Tạo Lambda Function"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.1-create-lambda/">
+     <b> 5.3.1. </b> Tạo Lambda Function 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.2-call-bedrock-converse/"
+  title="Thêm code gọi Converse API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.2-call-bedrock-converse/">
+     <b> 5.3.2. </b> Thêm code gọi Converse API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.3-test-lambda/"
+  title="Kiểm thử Lambda Function"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.3-test-lambda/">
+     <b> 5.3.3. </b> Kiểm thử Lambda Function 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-api-gateway-integration/"
+  title="Tạo API Gateway"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-api-gateway-integration/">
+     <b> 5.4. </b> Tạo API Gateway 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-api-gateway-integration/5.4.1-create-http-api/"
+  title="Tạo HTTP API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-api-gateway-integration/5.4.1-create-http-api/">
+     <b> 5.4.1. </b> Tạo HTTP API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-api-gateway-integration/5.4.2-integrate-lambda/"
+  title="Gắn API với Lambda"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-api-gateway-integration/5.4.2-integrate-lambda/">
+     <b> 5.4.2. </b> Gắn API với Lambda 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-testing-and-logs/"
+  title="Kiểm thử"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-testing-and-logs/">
+     <b> 5.5. </b> Kiểm thử 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://phamvunhatminh.github.io/AWS-FCJ-Workshop/3-blogstranslated/3.2-blog2/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://phamvunhatminh.github.io/AWS-FCJ-Workshop/vi/3-blogstranslated/3.2-blog2/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 2
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#networking--content-delivery"><strong>Networking &amp; Content Delivery</strong></a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#yêu-cầu-tiên-quyết"><strong>Yêu cầu tiên quyết</strong></a></li>
+        <li><a href="#các-kịch-bản-kết-nối-ứng-dụng"><strong>Các kịch bản kết nối ứng dụng</strong></a></li>
+        <li><a href="#các-khả-năng-của-vpc-route-server"><strong>Các khả năng của VPC Route Server</strong></a></li>
+        <li><a href="#kịch-bản-1-sử-dụng-địa-chỉ-ip-nổi-floating-ip-cho-failover-của-ứng-dụng"><strong>Kịch bản #1: Sử dụng địa chỉ IP nổi (floating IP) cho failover của ứng dụng</strong></a></li>
+        <li><a href="#tổng-quan-giải-pháp"><strong>Tổng quan giải pháp</strong></a></li>
+        <li><a href="#kịch-bản-2-kiểm-tra-lưu-lượng-vào-vpc-vpc-ingress-traffic-inspection"><strong>Kịch bản #2: Kiểm tra lưu lượng vào VPC (VPC ingress traffic inspection)</strong></a></li>
+        <li><a href="#tổng-quan-giải-pháp-1"><strong>Tổng quan giải pháp</strong></a></li>
+        <li><a href="#tất-cả-lưu-lượng-đi-vào-vpc-thông-qua-igw-trước-tiên-sẽ-được-định-tuyến-đến-firewall-để-kiểm-tra-inspection-trước-khi-được-chuyển-tiếp-đến-subnet-của-ứng-dụng-application-subnet--tương-tự-mọi-lưu-lượng-rời-khỏi-subnet-của-ứng-dụng-cũng-sẽ-đi-qua-firewall-để-kiểm-tra-trước-khi-được-gửi-ra-internet">Tất cả lưu lượng đi vào VPC thông qua IGW trước tiên sẽ được định tuyến đến firewall để kiểm tra (inspection) trước khi được chuyển tiếp đến subnet của ứng dụng (application subnet).  Tương tự, mọi lưu lượng rời khỏi subnet của ứng dụng cũng sẽ đi qua firewall để kiểm tra trước khi được gửi ra Internet.</a></li>
+        <li><a href="#bảng-định-tuyến-internet-gateway"><strong>Bảng định tuyến Internet Gateway</strong></a></li>
+        <li><a href="#bảng-định-tuyến-của-application-subnet-application-subnet-route-table"><strong>Bảng định tuyến của Application Subnet (Application subnet route table)</strong></a></li>
+        <li><a href="#bảng-định-tuyến-của-firewall-subnet-firewall-subnet-route-table"><strong>Bảng định tuyến của Firewall Subnet (Firewall subnet route table)</strong></a></li>
+        <li><a href="#phát-hiện-sự-cố-failover-detection-với-bfd"><strong>Phát hiện sự cố (Failover Detection) với BFD</strong></a></li>
+        <li><a href="#khôi-phục--failback-recovery"><strong>Khôi phục / Failback (Recovery)</strong></a></li>
+        <li><a href="#ưu-điểm-của-cơ-chế-failover-dựa-trên-vpc-route-server-với-bgp--bfd">Ưu điểm của cơ chế Failover dựa trên VPC Route Server với BGP + BFD</a></li>
+        <li><a href="#các-điểm-cần-lưu-ý"><strong>Các điểm cần lưu ý</strong></a></li>
+        <li><a href="#kết-luận"><strong>Kết luận</strong></a></li>
+        <li><a href="#akshay-choudhry"><strong>Akshay Choudhry</strong></a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 2
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="networking--content-delivery"><a href="https://aws.amazon.com/blogs/networking-and-content-delivery/"><strong>Networking &amp; Content Delivery</strong></a></h2>
+<h1 id="định-tuyến-động-sử-dụng-amazon-vpc-route-server"><strong>Định tuyến động sử dụng Amazon VPC Route Server</strong></h1>
+<p>Bởi Ammar Latif và Akshay Choudhry | vào ngày 02 THÁNG 9, 2025 | trong <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/post-types/">Post Types</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/architecture/">Architecture</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/industries/">Industries</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/networking-content-delivery/">Networking &amp; Content Delivery</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/post-types/technical-how-to/">Technical How-to</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/category/industries/telecommunications/">Telecommunications</a> | <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/dynamic-routing-using-amazon-vpc-route-server/">Permalink</a> | <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/dynamic-routing-using-amazon-vpc-route-server/">Share</a></p>
+<p><a href="https://docs.aws.amazon.com/vpc/latest/userguide/dynamic-routing-route-server.html"><strong>Amazon VPC Route Server</strong></a> cho phép định tuyến động (dynamic routing) trong <a href="https://aws.amazon.com/vpc/"><strong>Amazon Virtual Private Cloud (Amazon VPC)</strong></a> bằng cách sử dụng Border Gateway Protocol (BGP). Bạn có thể sử dụng Amazon VPC Route Server để kiểm soát lưu lượng mạng giữa các ứng dụng trên cloud và hệ thống on-premises một cách hiệu quả và thông minh. Amazon VPC Route Server sử dụng BGP để cung cấp khả năng kiểm soát nâng cao đối với các tuyến đường lưu lượng, đặc biệt trong các tình huống xảy ra sự cố, đồng thời giúp giảm thiểu thao tác thủ công và lỗi do con người.</p>
+<p>Trong bài viết này, chúng ta sẽ cùng khám phá nhiều kịch bản khác nhau, nơi định tuyến động ở cấp ứng dụng (application-level dynamic routing) ảnh hưởng đến việc truyền tải lưu lượng đến các instance, cũng như cách hệ thống xử lý tình huống failover với mức độ gián đoạn tối thiểu.</p>
+<h3 id="yêu-cầu-tiên-quyết"><strong>Yêu cầu tiên quyết</strong></h3>
+<p>Giả định rằng bạn đã quen thuộc với các khái niệm về mạng AWS liên quan đến tính sẵn sàng cao (high availability) và cơ chế failover, chẳng hạn như <a href="https://aws.amazon.com/ec2/"><strong>Amazon Elastic Compute Cloud (Amazon EC2)</strong></a>, <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html"><strong>Elastic Network Interfaces (ENIs)</strong></a>, Amazon VPC, VPC routing tables, và <a href="https://aws.amazon.com/about-aws/global-infrastructure/regions_az/"><strong>AWS Availability Zones (AZs)</strong></a>. Cũng giả định rằng bạn hiểu các khái niệm cơ bản về mạng như IP addressing, CIDR blocks, network routing, BGP (Border Gateway Protocol) và Bidirectional Forwarding Detection (BFD). Bài viết này không tập trung vào việc định nghĩa những dịch vụ và khái niệm cơ bản đó, mà thay vào đó sẽ minh họa cách chúng có thể được sử dụng để triển khai giải pháp floating IP cho failover của ứng dụng. Để tìm hiểu thêm về các kiến thức nền tảng trong mạng AWS, bạn nên tham khảo tài liệu AWS về VPC networking và các bài viết thuộc chuyên mục AWS Networking and Content Delivery.<br>
+Đối với chi tiết về các khái niệm VPC Route Server, vui lòng tham khảo tài liệu hướng dẫn <a href="https://docs.aws.amazon.com/vpc/latest/userguide/dynamic-routing-route-server.html"><strong>Getting started tại đây.</strong></a></p>
+<h3 id="các-kịch-bản-kết-nối-ứng-dụng"><strong>Các kịch bản kết nối ứng dụng</strong></h3>
+<p>Lưu lượng bên trong Amazon VPC được điều khiển bởi route tables. Các route tables này được gắn với subnets, Internet Gateways (IGWs) và Virtual Private Gateways, cho phép bạn xác định đường đi của lưu lượng trước khi nó đến được đích.<br>
+Ví dụ, bạn có thể định nghĩa các tuyến trong IGW route table để hướng lưu lượng đi qua firewall trước khi đến điểm đích mong muốn.<br>
+Tương tự, bạn có thể định tuyến lưu lượng từ các subnet đến NAT Gateway, IGW, Peering Connections, hoặc Virtual Private Gateway tùy thuộc vào trường hợp sử dụng (use case).</p>
+<p>Có những tình huống mà các ứng dụng (chẳng hạn như ứng dụng bảo mật hoặc xử lý mạng) cần kiểm soát chi tiết (fine-grain control) đường đi của lưu lượng để ảnh hưởng đến cách lưu lượng được gửi đến ứng dụng trước khi đến đích cuối cùng. Các ứng dụng này thường nằm giữa nguồn (source) và đích (destination) của lưu lượng mạng nhằm cung cấp các dịch vụ liên quan đến mạng.<br>
+Một ví dụ phổ biến là chuyển hướng lưu lượng đến thiết bị bảo mật (security appliance) để kiểm tra lưu lượng (traffic inspection) trước khi gửi đến đích thực tế.</p>
+<p>Mặc dù static routes có thể được dùng để định tuyến lưu lượng đến các thiết bị bảo mật hoặc middleboxes, chúng có những hạn chế đáng kể (trừ khi được sử dụng cùng <a href="https://docs.aws.amazon.com/vpc/latest/userguide/gwlb-route.html"><strong>Gateway Load Balancer</strong></a> (GWLB)). Static routes yêu cầu can thiệp thủ công khi xảy ra sự cố, không tự động thích ứng với thay đổi mạng, và trở nên phức tạp hơn khi quy mô mạng mở rộng.<br>
+Việc quản lý thủ công này làm tăng nguy cơ lỗi do con người và kéo dài thời gian khôi phục (recovery time) trong trường hợp gián đoạn.</p>
+<p>Dynamic routing giải quyết những thách thức đó bằng cách tự động cập nhật route tables, cung cấp khả năng mở rộng tốt hơn và kích hoạt cơ chế failover — tất cả mà không cần can thiệp thủ công.</p>
+<p><strong>Lưu ý:</strong> AWS luôn khuyến nghị sử dụng GWLB để đảm bảo tính sẵn sàng cao (high availability) và khả năng dự phòng (redundancy). Bạn chỉ nên xem xét giải pháp này nếu đang sử dụng EC2 instances với ứng dụng không hỗ trợ GWLB cho mục đích inspection.</p>
+<h3 id="các-khả-năng-của-vpc-route-server"><strong>Các khả năng của VPC Route Server</strong></h3>
+<p>VPC Route Server cung cấp khả năng định tuyến động (dynamic routing) trong VPC bằng cách sử dụng giao thức định tuyến BGP (Border Gateway Protocol). Các ứng dụng mạng (networking applications) có thể sử dụng BGP để cập nhật các VPC route tables, cho phép kiểm soát chi tiết lưu lượng bên trong VPC và tự động thực hiện failover giữa các instance được triển khai trong cùng hoặc khác AZ (Availability Zone). VPC Route Server có thể tự động cập nhật các VPC và IGW route tables với các route ưu tiên cho IPv4 hoặc IPv6 nhằm đạt được khả năng chịu lỗi định tuyến (routing fault tolerance) cho các workload. Khi xảy ra sự cố, hệ thống có thể tự động định tuyến lại lưu lượng bên trong VPC, giúp nâng cao khả năng quản lý (manageability) và cải thiện khả năng tương tác (interoperability) với các workload của bên thứ ba. Khả năng này được thể hiện rõ trong các kịch bản mà khi một AZ gặp sự cố, hệ thống có thể chuyển hướng lưu lượng đến tài nguyên trong AZ khác, và các route tables sẽ được tự động cập nhật để phản ánh đường đi mạng mới.</p>
+<p>Trong các phần sau, chúng ta sẽ thảo luận chi tiết hơn về các khả năng định tuyến của VPC Route Server.</p>
+<h3 id="kịch-bản-1-sử-dụng-địa-chỉ-ip-nổi-floating-ip-cho-failover-của-ứng-dụng"><strong>Kịch bản #1: Sử dụng địa chỉ IP nổi (floating IP) cho failover của ứng dụng</strong></h3>
+<p>Trong kịch bản này, chúng ta sẽ minh họa cách địa chỉ IP nổi (floating IP) có thể được sử dụng để đạt được failover liền mạch (seamless failover) giữa hai EC2 instance được triển khai trên hai AZ khác nhau trong một kiến trúc có tính sẵn sàng cao (highly available architecture).<br>
+Bạn có một ứng dụng quan trọng với doanh nghiệp (business-critical application) đang chạy trên một EC2 instance trong AZ1. Một EC2 instance dự phòng (standby) được triển khai trong AZ2 để đảm bảo tính sẵn sàng cao. Ứng dụng của bạn không được tích hợp với GWLB, hoặc GWLB không khả dụng trong môi trường AWS (chẳng hạn như Local Zone).<br>
+Mục tiêu của bạn là đảm bảo cơ chế high availability cho ứng dụng trong trường hợp instance chính hoặc AZ của nó gặp sự cố.</p>
+<p>Bạn có thể sử dụng <a href="https://aws.amazon.com/cloudformation/">AWS CloudFormation</a> trong <a href="https://aws.amazon.com/cloudformation/">aws-samples repo</a> để triển khai Kịch bản #1 trong tài khoản AWS của mình. Mẫu CloudFormation template này sẽ tạo ra cấu hình sau:</p>
+<ul>
+<li>
+<p>VPC với ba subnet trải rộng trên hai AZ</p>
+</li>
+<li>
+<p>VPC route table cho ba subnet được tạo</p>
+</li>
+<li>
+<p>Tạo và gắn IGW vào VPC, đồng thời tạo default route đến IGW trong VPC route table</p>
+</li>
+<li>
+<p>Tạo và gắn route server vào VPC — route server này sử dụng ASN 65000</p>
+</li>
+<li>
+<p>Tạo hai VPC Route Server endpoints (RSEs) trong mỗi subnet (để đảm bảo high availability)</p>
+</li>
+<li>
+<p>Tạo các route server peers</p>
+</li>
+<li>
+<p>Tạo hai instance để mô phỏng ứng dụng high availability cần kiểm thử, sử dụng <a href="https://github.com/osrg/gobgp">Gobgp software</a></p>
+</li>
+<li>
+<p>Mỗi instance chạy BGP với ASN 65001 và thiết lập peering với RSEs trong subnet tương ứng</p>
+</li>
+<li>
+<p>Cấu hình Gobgp được định sẵn trong user-data của các instance và lưu trong file gobgpd.conf tại thư mục /home/ec2-user</p>
+</li>
+<li>
+<p>Tạo một test instance để ping đến loopback IP của ứng dụng high availability đang được kiểm thử</p>
+</li>
+<li>
+<p>Bạn có thể sử dụng <a href="https://aws.amazon.com/systems-manager/">AWS Systems Manager</a> để truy cập các instance đã được tạo</p>
+</li>
+</ul>
+<h3 id="tổng-quan-giải-pháp"><strong>Tổng quan giải pháp</strong></h3>
+<p>Chúng ta sử dụng một địa chỉ IP nổi (floating IP) được cấp phát từ một dải CIDR ngoài VPC (non-VPC CIDR range) và được ứng dụng sử dụng. Client sẽ sử dụng địa chỉ IP này để truy cập ứng dụng.<br>
+Khi instance chính gặp sự cố, lưu lượng đến địa chỉ floating IP sẽ được định tuyến lại (rerouted) đến ENI của instance dự phòng trong AZ thứ hai.<br>
+Cách tiếp cận này giúp giảm thiểu sự gián đoạn trong tính sẵn sàng của ứng dụng bằng việc sử dụng cơ chế floating IP kết hợp với dynamic VPC routing, mà không cần cập nhật cấu hình client hoặc can thiệp thủ công.</p>
+<p><img src="../../../images/3-BlogsTranslated/blog2/1.png" alt="Figure 1. Instance\#1 is active"></p>
+<p>Hình 1. Instance#1 đang hoạt động (active)</p>
+<p>Như thể hiện trong Hình 1, ứng dụng hoạt động theo mô hình active/standby trên hai AZ.<br>
+Cả hai EC2 instance đều quảng bá cùng một địa chỉ loopback IP (ví dụ: 172.16.1.1/32) ra mạng thông qua BGP peering với hai VPC RSE được đặt trong cùng một subnet.<br>
+Hai RSE này được sử dụng để đảm bảo tính dự phòng (redundancy) và nâng cao khả năng sẵn sàng (availability) của dịch vụ định tuyến (routing services).</p>
+<p><img src="../../../images/3-BlogsTranslated/blog2/2.png" alt="Figure 2. VPC Route Server endpoints">Hình 2. Các VPC Route Server endpoint</p>
+<p><img src="../../../images/3-BlogsTranslated/blog2/3.png" alt="Figure 3. VPC Route Server peers">Hình 3. Các VPC Route Server peer</p>
+<p><img src="../../../images/3-BlogsTranslated/blog2/4.png" alt="Figure 4. Route Server RIB table">Hình 4. Bảng RIB của Route Server (Route Server RIB table)</p>
+<p>Để đảm bảo rằng lưu lượng được định tuyến đến instance đang hoạt động (active instance), ứng dụng sử dụng thuộc tính BGP AS Path. Instance hoạt động sẽ quảng bá route với AS Path ngắn hơn, trong khi instance dự phòng (standby) sẽ thêm các AS number khác, khiến đường đi của nó kém ưu tiên hơn. BGP luôn chọn đường đi có AS Path ngắn nhất, đảm bảo rằng instance hoạt động được chọn làm đường đi ưu tiên. Các thuộc tính BGP khác như Multi-Exit Discriminator (MED) cũng có thể được sử dụng để đạt được mức độ ưu tiên định tuyến tương tự.</p>
+<ol>
+<li>Cả instance hoạt động và dự phòng đều quảng bá địa chỉ 172.16.1.1/32 thông qua BGP đến hai RSE trong các subnet tương ứng của chúng.</li>
+<li>VPC Route Server nhận được bốn bản quảng bá (advertisements) cho cùng một prefix. Điều này được thể hiện trong Hình 4, nơi loopback 172.16.1.1/32 được nhận bởi bốn RSE.</li>
+<li>Dựa trên quy tắc chọn đường của BGP (BGP path selection rules), VPC Route Server sẽ ưu tiên route từ instance hoạt động vì có AS Path ngắn hơn. Điều này được minh họa trong Hình 4, nơi một trong bốn đường đi được chọn và cài đặt (installed).</li>
+<li>Sau đó, VPC Route Server xác định ENI tương ứng với instance đang hoạt động và cập nhật VPC route table để chuyển tiếp lưu lượng của 172.16.1.1/32 đến ENI-A.</li>
+</ol>
+<p><img src="../../../images/3-BlogsTranslated/blog2/5.png" alt="Figure 5. VPC route table updated with 172.16.1.1/32 pointing to the active instance ENI">Hình 5. Bảng định tuyến VPC (VPC route table) được cập nhật với 172.16.1.1/32 trỏ đến ENI của instance đang hoạt động</p>
+<p>Bạn có thể kiểm tra cấu hình Gobgp bằng cách kết nối đến một trong hai instance (instance-rs-az1 hoặc instance-rs-az2) thông qua <a href="https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html">EC2 Session Manager</a>.</p>
+<p>Cấu hình Gobgp nằm tại đường dẫn /home/ec2-user/gobgpd.conf.</p>
+<p>Bash-5.2$ sudo more /home/ec2-user/gobgpd.conf</p>
+<p>[global.config]<br>
+as = 65001<br>
+router-id = &ldquo;10.0.1.203&rdquo;<br>
+[[neighbors]]<br>
+[neighbors.config]<br>
+neighbor-address = &ldquo;10.0.1.230&rdquo;<br>
+peer-as = 65000<br>
+[[neighbors.afi-safis]]<br>
+[neighbors.afi-safis.config]<br>
+afi-safi-name = &ldquo;ipv4-unicast&rdquo;<br>
+[[neighbors]]<br>
+[neighbors.config]<br>
+neighbor-address = &ldquo;10.0.1.136&rdquo;<br>
+peer-as = 65000<br>
+[[neighbors.afi-safis]]<br>
+[neighbors.afi-safis.config]<br>
+afi-safi-name = &ldquo;ipv4-unicast&rdquo;</p>
+<p>Sử dụng lệnh sau để kiểm tra trạng thái BGP neighbor.<br>
+Sẽ có hai neighbor tương ứng với hai VPC RSE trong subnet của instance.</p>
+<p>sh-5.2$ sudo /home/ec2-user/gobgp neighbor<br>
+Peer AS Up/Down State |#Received Accepted<br>
+10.0.1.136 65000 22:43:07 Establ | 0 0<br>
+10.0.1.230 65000 22:43:08 Establ | 0 0</p>
+<p>Kiểm tra xem route của loopback có đang được quảng bá (advertised) thông qua BGP hay không.</p>
+<p>sh-5.2$ sudo /home/ec2-user/gobgp global rib<br>
+Network Next Hop AS_PATH Age Attrs<br>
+*&gt; 172.16.1.1/32 0.0.0.0 22:42:21 [{Origin: ?}]</p>
+<p>Để kiểm tra thiết lập định tuyến, bạn có thể truy cập vào instance kiểm thử “test-instance” bằng phương pháp Systems Manager.<br>
+Khi đã đăng nhập, bạn có thể ping đến địa chỉ 172.16.1.1, và bạn sẽ nhận được phản hồi từ instance đang hoạt động “instance-rs-az1”.</p>
+<p>sh-5.2$ ping 172.16.1.1<br>
+PING 172.16.1.1 (172.16.1.1) 56(84) bytes of data.<br>
+64 bytes from 172.16.1.1: icmp_seq=1 ttl=127 time=0.712 ms<br>
+64 bytes from 172.16.1.1: icmp_seq=2 ttl=127 time=0.338 ms<br>
+64 bytes from 172.16.1.1: icmp_seq=3 ttl=127 time=0.378 ms</p>
+<p><strong>Phát hiện và khôi phục khi xảy ra failover</strong></p>
+<p>Để mô phỏng quá trình failover, bạn có thể tắt (shut down) instance đang hoạt động (instance-rs-az1).</p>
+<ol>
+<li>Nếu instance đang hoạt động gặp sự cố hoặc mất kết nối, BGP sẽ phát hiện lỗi trong khoảng thời gian timeout được cấu hình.</li>
+<li>VPC Route Server sẽ đánh dấu phiên BGP với instance đang hoạt động là down và rút (withdraw) route đó khỏi RIB table.</li>
+<li>Sau đó, quá trình hội tụ lại của BGP (BGP re-convergence) được kích hoạt, và route được standby instance quảng bá sẽ được chọn là đường đi tốt nhất (best path).</li>
+<li>VPC route table sẽ được cập nhật để chuyển tiếp lưu lượng (traffic) cho 172.16.1.1/32 đến ENI của standby instance (ENI-B).</li>
+<li>Lưu lượng sẽ chuyển sang standby instance một cách liền mạch, giúp duy trì tính sẵn sàng của ứng dụng mà không làm gián đoạn người dùng.</li>
+</ol>
+<p>Để kiểm tra cấu hình định tuyến, bạn có thể truy cập vào test instance “test-instance” bằng phương thức Systems Manager.<br>
+Khi đã đăng nhập, hãy ping đến địa chỉ 172.16.1.1, và bạn sẽ nhận được phản hồi từ instance hiện đang hoạt động “instance-rs-az2.</p>
+<p>sh-5.2$ ping 172.16.1.1<br>
+PING 172.16.1.1 (172.16.1.1) 56(84) bytes of data.<br>
+64 bytes from 172.16.1.1: icmp_seq=1 ttl=127 time=0.712 ms<br>
+64 bytes from 172.16.1.1: icmp_seq=2 ttl=127 time=0.338 ms<br>
+64 bytes from 172.16.1.1: icmp_seq=3 ttl=127 time=0.378 ms</p>
+<p>Để đảm bảo phát hiện sự cố một cách nhanh chóng, giao thức BFD (Bidirectional Forwarding Detection) có thể được kích hoạt giữa ứng dụng và các RSE.<br>
+BFD giúp giảm đáng kể thời gian cần thiết để phát hiện lỗi liên kết hoặc lỗi của ứng dụng.</p>
+<p><img src="../../../images/3-BlogsTranslated/blog2/6.png" alt="Figure 6. Instance2 took over as active">Hình 6. Instance #2 đảm nhiệm vai trò active</p>
+<p><img src="../../../images/3-BlogsTranslated/blog2/7.png" alt="Figure 7. Route table updated to point to Inst2 ENI">Hình 7. Bảng định tuyến (route table) được cập nhật để trỏ đến ENI của Instance #2</p>
+<p>Kịch bản này minh họa một phương pháp mạnh mẽ để triển khai cơ chế failover dựa trên địa chỉ IP động (floating IP) trong AWS, bằng cách sử dụng các giao thức định tuyến tiêu chuẩn như BGP và BFD.<br>
+Giải pháp này cho phép failover nhanh chóng, đáng tin cậy và minh bạch giữa các AZ, mà không cần cập nhật DNS hay can thiệp thủ công.<br>
+Đây là giải pháp lý tưởng cho các workload yêu cầu tính sẵn sàng cao (high availability), thời gian gián đoạn tối thiểu, và khả năng chịu lỗi tối đa (maximum resiliency).</p>
+<h3 id="kịch-bản-2-kiểm-tra-lưu-lượng-vào-vpc-vpc-ingress-traffic-inspection"><strong>Kịch bản #2: Kiểm tra lưu lượng vào VPC (VPC ingress traffic inspection)</strong></h3>
+<p>Hãy xem xét kịch bản trong đó bạn có một mô hình bảo mật tập trung, nơi các thiết bị tường lửa (firewall appliances) — được triển khai dưới dạng EC2 instances — có nhiệm vụ kiểm tra toàn bộ lưu lượng north-south hoặc east-west trong VPC.<br>
+Các firewall này đóng vai trò quan trọng trong tư thế bảo mật (security posture) của bạn và phải luôn sẵn sàng để kiểm tra và chuyển tiếp lưu lượng.<br>
+Để duy trì tính sẵn sàng cao, bạn triển khai hai firewall EC2 instances ở hai AZ khác nhau.<br>
+Mục tiêu của bạn là đảm bảo rằng nếu firewall chính (active) gặp sự cố, thì lưu lượng sẽ được chuyển hướng liền mạch sang firewall dự phòng (standby).</p>
+<p>Trong kịch bản này, chúng ta sẽ trình bày cách triển khai cơ chế high availability và failover cho các firewall dạng stateful được triển khai trên nhiều AZ trong AWS, bằng cách sử dụng VPC Route Server và các bản cập nhật định tuyến động (dynamic route updates).</p>
+<h3 id="tổng-quan-giải-pháp-1"><strong>Tổng quan giải pháp</strong></h3>
+<h3 id="tất-cả-lưu-lượng-đi-vào-vpc-thông-qua-igw-trước-tiên-sẽ-được-định-tuyến-đến-firewall-để-kiểm-tra-inspection-trước-khi-được-chuyển-tiếp-đến-subnet-của-ứng-dụng-application-subnet--tương-tự-mọi-lưu-lượng-rời-khỏi-subnet-của-ứng-dụng-cũng-sẽ-đi-qua-firewall-để-kiểm-tra-trước-khi-được-gửi-ra-internet">Tất cả lưu lượng đi vào VPC thông qua IGW trước tiên sẽ được định tuyến đến firewall để kiểm tra (inspection) trước khi được chuyển tiếp đến subnet của ứng dụng (application subnet).  Tương tự, mọi lưu lượng rời khỏi subnet của ứng dụng cũng sẽ đi qua firewall để kiểm tra trước khi được gửi ra Internet.</h3>
+<p>Hình dưới đây minh họa một thiết bị firewall được cài đặt trên một EC2 instance trong subnet A.<br>
+Thiết bị này kiểm tra toàn bộ lưu lượng đi từ IGW đến subnet B (application subnet) và từ subnet B đến IGW.</p>
+<p><img src="../../../images/3-BlogsTranslated/blog2/8.png" alt="">Hình 8. Kịch bản #2 — Firewall #1 đang ở trạng thái active</p>
+<p>Mỗi firewall sẽ thiết lập bốn phiên BGP (BGP sessions):<br>
+hai phiên cho subnet A và hai phiên cho subnet B, bao gồm cả bảng định tuyến (route tables) của application subnet và IGW.</p>
+<p>Để đảm bảo rằng chỉ một firewall được sử dụng tại một thời điểm, ưu tiên đường đi BGP (BGP path preference) sẽ được điều chỉnh bằng các tham số (metrics) của BGP.<br>
+Chúng ta sẽ tập trung vào các metric sau đây:</p>
+<ul>
+<li>
+<p>AS_Path: Là thuộc tính BGP hiển thị chuỗi các số hiệu hệ thống tự trị (Autonomous System numbers) mà một route đã đi qua. Thuộc tính này vừa đóng vai trò ngăn chặn vòng lặp (loop prevention), vừa là tiêu chí lựa chọn đường đi, trong đó đường có AS_Path ngắn hơn sẽ được ưu tiên.</p>
+</li>
+<li>
+<p>MED (Multi-Exit Discriminator): Là thuộc tính BGP được sử dụng để ảnh hưởng đến lưu lượng vào (inbound traffic) bằng cách gợi ý điểm vào ưu tiên khi có nhiều kết nối giữa hai hệ thống tự trị (autonomous systems).<br>
+Giá trị MED càng thấp thì đường đi càng được ưu tiên.</p>
+</li>
+</ul>
+<p>Firewall đang hoạt động (active firewall) sẽ quảng bá (advertise) các prefix với các thuộc tính BGP được ưu tiên cao nhất,<br>
+trong khi firewall dự phòng (standby firewall) cũng quảng bá cùng các prefix đó, nhưng với thuộc tính kém ưu tiên hơn.</p>
+<p>Trong kịch bản này, chúng ta sử dụng kỹ thuật AS Path Prepending, nghĩa là firewall dự phòng sẽ thêm nhiều AS number hơn khi quảng bá prefix đến RSE, khiến đường đi của nó kém ưu tiên hơn.</p>
+<h3 id="bảng-định-tuyến-internet-gateway"><strong>Bảng định tuyến Internet Gateway</strong></h3>
+<p>Các route table gắn với IGW kiểm soát đường đi của lưu lượng Internet inbound bên trong VPC.<br>
+Người dùng thường sử dụng bảng này để chèn firewall hoặc các chức năng mạng ảo khác (Virtual Network Functions) vào đường đi của lưu lượng Internet vào.</p>
+<p>Cả firewall active và firewall standby đều thiết lập peering với VPC Route Server và quảng bá (advertise) CIDR của application subnet đến RSEs.<br>
+Tuy nhiên, firewall standby sẽ quảng bá route với AS Path dài hơn.<br>
+VPC Route Server sẽ chạy thuật toán chọn đường đi tối ưu (BGP Best Path Selection) và cài đặt route được quảng bá bởi firewall active.</p>
+<p>Bảng định tuyến cho subnet của IGW có route như sau:</p>
+<p>Application subnet CIDR -&ndash;&gt; Active Firewall ENI.</p>
+<p>VPC sẽ định tuyến (route) toàn bộ lưu lượng đi đến application subnet đến ENI của firewall đang hoạt động (Active Firewall ENI).</p>
+<h3 id="bảng-định-tuyến-của-application-subnet-application-subnet-route-table"><strong>Bảng định tuyến của Application Subnet (Application subnet route table)</strong></h3>
+<p>Cả firewall active và firewall standby đều thiết lập peering với VPC Route Server và quảng bá (advertise) route <a href="http://0.0.0.0/0">0.0.0.0/0</a> đến RSEs.<br>
+Tuy nhiên, firewall standby sẽ quảng bá <a href="http://0.0.0.0/0">0.0.0.0/0</a> với AS Path dài hơn, khiến route của nó ít được ưu tiên hơn.<br>
+VPC Route Server sau đó chạy thuật toán chọn đường đi tối ưu của BGP (BGP Best Path Selection) và cài đặt route được quảng bá bởi firewall active.</p>
+<p>Bảng định tuyến cho application subnet sẽ có route như sau:</p>
+<p>0.0.0.0/0 -&ndash;&gt; Active FW ENI.</p>
+<p>Route này sẽ định tuyến lưu lượng từ các application server đến firewall đang hoạt động (active firewall) trước khi lưu lượng được gửi ra Internet.</p>
+<h3 id="bảng-định-tuyến-của-firewall-subnet-firewall-subnet-route-table"><strong>Bảng định tuyến của Firewall Subnet (Firewall subnet route table)</strong></h3>
+<p>Bảng định tuyến cho provider subnet (subnet nơi firewall được triển khai) sẽ bao gồm các route tĩnh (static routes) như sau:</p>
+<p>0.0.0.0/0 -&ndash;&gt; igw-id</p>
+<p>Route này sẽ định tuyến toàn bộ lưu lượng đến IGW.</p>
+<h3 id="phát-hiện-sự-cố-failover-detection-với-bfd"><strong>Phát hiện sự cố (Failover Detection) với BFD</strong></h3>
+<p>BFD (Bidirectional Forwarding Detection) được kích hoạt trên từng phiên BGP giữa các firewall và các VPC RSE.<br>
+BFD cho phép phát hiện sự cố cực nhanh — thường dưới 1 giây — bằng cách liên tục trao đổi các gói tin điều khiển (control packets).</p>
+<p>Khi xảy ra sự cố với firewall, quá trình sau sẽ diễn ra:</p>
+<ol>
+<li>
+<p>BFD phát hiện ra sự cố của phiên BGP giữa firewall đang hoạt động (active firewall) và các RSE.</p>
+</li>
+<li>
+<p>RSEs đánh dấu phiên BGP này ở trạng thái DOWN.</p>
+</li>
+<li>
+<p>RSEs rút lại (withdraw) các route ưu tiên — bao gồm cả các prefix nội bộ và bên ngoài — mà firewall bị lỗi đã quảng bá trước đó.</p>
+</li>
+<li>
+<p>Quá trình BGP re-convergence được kích hoạt — RSEs sẽ chọn route thay thế (standby route) được quảng bá bởi firewall còn hoạt động (healthy firewall).</p>
+</li>
+<li>
+<p>Route mới này sẽ trở thành route active trong mặt điều khiển định tuyến của VPC (VPC routing control plane).</p>
+</li>
+<li>
+<p>Lưu lượng được tự động chuyển hướng sang firewall dự phòng (standby firewall).</p>
+</li>
+</ol>
+<p><img src="../../../images/3-BlogsTranslated/blog2/9.png" alt="">Hình 9. Sự cố của Firewall #1 khiến lưu lượng được định tuyến lại sang Firewall #2</p>
+<h3 id="khôi-phục--failback-recovery"><strong>Khôi phục / Failback (Recovery)</strong></h3>
+<p>Khi firewall bị lỗi được khôi phục và thiết lập lại các phiên BGP và BFD:</p>
+<ol>
+<li>
+<p>Nó sẽ tiếp tục quảng bá các thuộc tính BGP ưu tiên (preferred BGP attributes).</p>
+</li>
+<li>
+<p>RSEs sẽ phát hiện route có độ ưu tiên cao hơn và chuyển lưu lượng trở lại firewall đã khôi phục.</p>
+</li>
+</ol>
+<p>Quá trình này có thể được tự động hóa hoặc kiểm soát thông qua chính sách quản trị (admin policy) — ví dụ: preemptive hoặc non-preemptive failover.</p>
+<h3 id="ưu-điểm-của-cơ-chế-failover-dựa-trên-vpc-route-server-với-bgp--bfd">Ưu điểm của cơ chế Failover dựa trên VPC Route Server với BGP + BFD</h3>
+<ol>
+<li>
+<p>Hội tụ nhanh (Fast convergence): Phát hiện sự cố trong chưa đến 1 giây nhờ BFD.</p>
+</li>
+<li>
+<p>Tự động hoàn toàn (Fully automated): Không cần script hoặc can thiệp thủ công.</p>
+</li>
+<li>
+<p>Khả năng mở rộng (Scalable): Hoạt động với nhiều prefix và nhiều instance.</p>
+</li>
+<li>
+<p>Kiểm soát thuần đám mây (Cloud-native control): Tích hợp trực tiếp với lớp định tuyến của VPC.</p>
+</li>
+<li>
+<p>Tuân thủ chuẩn giao thức (Protocol standardization): Sử dụng hành vi BGP tiêu chuẩn trong ngành.</p>
+</li>
+</ol>
+<h3 id="các-điểm-cần-lưu-ý"><strong>Các điểm cần lưu ý</strong></h3>
+<ol>
+<li>
+<p>Quá trình tái hội tụ định tuyến (Routing re-convergence) có thể gây ra một khoảng downtime ngắn.<br>
+→ Hãy xem xét sử dụng GWLB (Gateway Load Balancer) làm lựa chọn ưu tiên cho failover ứng dụng nếu ứng dụng của bạn tích hợp với GWLB.</p>
+</li>
+<li>
+<p>Đảm bảo rằng tính năng route propagation được tắt nếu bạn đang quản lý route thủ công.</p>
+</li>
+<li>
+<p>Sử dụng BFD hoặc các công cụ phát hiện lỗi nhanh khác để đạt được tốc độ hội tụ nhanh hơn.</p>
+</li>
+<li>
+<p>Đảm bảo đường định tuyến đối xứng (symmetric routing) nếu bạn đang thực hiện kiểm tra đường quay lại (return-path inspection).</p>
+</li>
+<li>
+<p>Bật cơ chế giám sát và cảnh báo (monitoring and alerting) để theo dõi tình trạng hệ thống, thay đổi route, và các sự kiện failover.</p>
+</li>
+</ol>
+<h3 id="kết-luận"><strong>Kết luận</strong></h3>
+<p>Trong bài viết này, chúng ta đã khám phá cách sử dụng Amazon VPC Route Server để xây dựng kiến trúc mạng có khả năng mở rộng (scalable), chịu lỗi (fault-tolerant) và an toàn (secure) trong môi trường đám mây, bằng cách kích hoạt cơ chế failover cho các ứng dụng quan trọng và triển khai các kiến trúc high availability.</p>
+<p>Chúng ta đã đi qua hai mô hình kiến trúc khác nhau, kèm theo chi tiết triển khai thực tế.<br>
+VPC Route Server mở khóa các khả năng định tuyến nâng cao trong AWS, bằng cách tích hợp các giao thức tiêu chuẩn của ngành như BGP và BFD vào mạng VPC gốc (native VPC networking).</p>
+<p>Để bắt đầu sử dụng VPC Route Server ngay hôm nay, bạn có thể tham khảo tài liệu hướng dẫn <a href="https://docs.aws.amazon.com/vpc/latest/userguide/dynamic-routing-route-server.html">documentation</a> và hướng dẫn khởi đầu <a href="https://docs.aws.amazon.com/vpc/latest/userguide/route-server-tutorial.html">Get started tutorial của Amazon VPC Route Server.</a></p>
+<p><em><strong>Cập nhật ngày 15 tháng 9 năm 2025:</strong> Phiên bản trước của bài viết này bao gồm các hình minh họa sử dụng biểu tượng AWS cũ. Bài viết đã được cập nhật lại để phản ánh bộ biểu tượng kiến trúc AWS hiện tại.</em></p>
+<p><strong>About the authors</strong></p>
+<p><strong>Ammar Latif</strong>
+<img src="../../../images/3-BlogsTranslated/blog2/10.jpg" alt="image">
+Ammar là một Principal Solutions Architect trong AWS Worldwide Telecom Business Unit. Anh thích giúp khách hàng sử dụng các công nghệ cloud để giải quyết những thách thức trong kinh doanh. Trong suốt sự nghiệp của mình, Ammar đã hợp tác với nhiều khách hàng trong lĩnh vực Telecom và Media trên toàn cầu. Anh có bằng Tiến sĩ (Ph.D.) từ New Jersey Institute of Technology.</p>
+<h3 id="akshay-choudhry"><strong>Akshay Choudhry</strong></h3>
+<p><img src="../../../images/3-BlogsTranslated/blog2/11.jpg" alt="image">
+Akshay là một Principal Product Manager trong Networking and Security Services Team tại Amazon Web Services. Anh tập trung vào việc làm cho Virtual Private Cloud (VPC) trở nên trực quan và an toàn hơn cho hàng triệu khách hàng đang vận hành workloads của họ trên AWS. Trong thời gian rảnh, anh thích khám phá thiên nhiên, thử các nhà hàng mới và dành thời gian cho bạn bè cùng gia đình.</p>
+<p>TAGS: <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/tag/amazon-vpc/">Amazon VPC</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/tag/aws-cloudformation/">AWS CloudFormation</a>, <a href="https://aws.amazon.com/blogs/networking-and-content-delivery/tag/bgp/">BGP</a></p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.1-blog1/" title="Blog 1"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/3-blogstranslated/3.3-blog3/" title="Blog 3" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1765283266"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765283266"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765283266"></script>
+    <script src="../../../js/jquery.sticky.js?1765283266"></script>
+    <script src="../../../js/featherlight.min.js?1765283266"></script>
+    <script src="../../../js/highlight.pack.js?1765283266"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765283266"></script>
+    <script src="../../../js/learn.js?1765283266"></script>
+    <script src="../../../js/hugo-learn.js?1765283266"></script>
+
+    <link href="../../../mermaid/mermaid.css?1765283266" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765283266"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

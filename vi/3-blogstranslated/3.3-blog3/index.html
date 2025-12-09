@@ -1,0 +1,1714 @@
+<!DOCTYPE html>
+<html lang="vi" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.151.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="nhatminhob@gmail.com" />
+
+    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+
+    <title>Blog 3 :: Báo cáo thực tập</title>
+
+    
+    <link href="../../../css/nucleus.css?1765283266" rel="stylesheet">
+    <link href="../../../css/fontawesome-all.min.css?1765283266" rel="stylesheet">
+    <link href="../../../css/hybrid.css?1765283266" rel="stylesheet">
+    <link href="../../../css/featherlight.min.css?1765283266" rel="stylesheet">
+    <link href="../../../css/perfect-scrollbar.min.css?1765283266" rel="stylesheet">
+    <link href="../../../css/auto-complete.css?1765283266" rel="stylesheet">
+    <link href="../../../css/atom-one-dark-reasonable.css?1765283266" rel="stylesheet">
+    <link href="../../../css/theme.css?1765283266" rel="stylesheet">
+    <link href="../../../css/hugo-theme.css?1765283266" rel="stylesheet">
+    
+    <link href="../../../css/theme-workshop.css?1765283266" rel="stylesheet">
+    
+    
+
+    <script src="../../../js/jquery-3.3.1.min.js?1765283266"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../../vi/3-blogstranslated/3.3-blog3/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../../js/lunr.min.js?1765283266"></script>
+<script type="text/javascript" src="../../../js/auto-complete.js?1765283266"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/phamvunhatminh.github.io\/AWS-FCJ-Workshop\/\/vi";
+    
+</script>
+<script type="text/javascript" src="../../../js/search.js?1765283266"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/vi/1-worklog/"
+  title="Nhật ký công việc"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/">
+     <b> 1. </b> Nhật ký công việc 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/1-worklog/1.1-week1/"
+  title="Worklog Tuần 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.1-week1/">
+     <b> 1.1. </b> Worklog Tuần 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.2-week2/"
+  title="Worklog Tuần 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.2-week2/">
+     <b> 1.2. </b> Worklog Tuần 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.3-week3/"
+  title="Worklog Tuần 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.3-week3/">
+     <b> 1.3. </b> Worklog Tuần 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.4-week4/"
+  title="Worklog Tuần 4"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.4-week4/">
+     <b> 1.4. </b> Worklog Tuần 4 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.5-week5/"
+  title="Worklog Tuần 5"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.5-week5/">
+     <b> 1.5. </b> Worklog Tuần 5 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.6-week6/"
+  title="Worklog Tuần 6"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.6-week6/">
+     <b> 1.6. </b> Worklog Tuần 6 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.7-week7/"
+  title="Worklog Tuần 7"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.7-week7/">
+     <b> 1.7. </b> Worklog Tuần 7 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.8-week8/"
+  title="Worklog Tuần 8"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.8-week8/">
+     <b> 1.8. </b> Worklog Tuần 8 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.9-week9/"
+  title="Worklog Tuần 9"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.9-week9/">
+     <b> 1.9. </b> Worklog Tuần 9 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.10-week10/"
+  title="Worklog Tuần 10"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.10-week10/">
+     <b> 1.10. </b> Worklog Tuần 10 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.11-week11/"
+  title="Worklog Tuần 11"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.11-week11/">
+     <b> 1.11. </b> Worklog Tuần 11 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/1-worklog/1.12-week12/"
+  title="Worklog Tuần 12"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/1-worklog/1.12-week12/">
+     <b> 1.12 </b> Worklog Tuần 12 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/2-proposal/"
+  title="Bản đề xuất"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/">
+     <b> 2. </b> Bản đề xuất 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/2-proposal/2.1-attachments/"
+  title="Phụ lục &amp; Tài liệu đính kèm"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/2-proposal/2.1-attachments/">
+     <b> 2.1. </b> Phụ lục &amp; Tài liệu đính kèm 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/3-blogstranslated/"
+  title="Các bài blogs đã dịch"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/">
+     <b> 3. </b> Các bài blogs đã dịch 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../../vi/3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/4-eventparticipated/"
+  title="Các events đã tham gia"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/">
+     <b> 4. </b> Các events đã tham gia 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.1-workshop-overview/"
+  title="Giới thiệu"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Giới thiệu 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.2-prerequisite/"
+  title="Chuẩn bị"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.2-prerequisite/">
+     <b> 5.2. </b> Chuẩn bị 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-create-lambda-and-bedrock-call/"
+  title="Tạo Lambda và gọi Bedrock"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-create-lambda-and-bedrock-call/">
+     <b> 5.3. </b> Tạo Lambda và gọi Bedrock 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.1-create-lambda/"
+  title="Tạo Lambda Function"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.1-create-lambda/">
+     <b> 5.3.1. </b> Tạo Lambda Function 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.2-call-bedrock-converse/"
+  title="Thêm code gọi Converse API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.2-call-bedrock-converse/">
+     <b> 5.3.2. </b> Thêm code gọi Converse API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.3-test-lambda/"
+  title="Kiểm thử Lambda Function"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.3-test-lambda/">
+     <b> 5.3.3. </b> Kiểm thử Lambda Function 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-api-gateway-integration/"
+  title="Tạo API Gateway"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-api-gateway-integration/">
+     <b> 5.4. </b> Tạo API Gateway 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-api-gateway-integration/5.4.1-create-http-api/"
+  title="Tạo HTTP API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-api-gateway-integration/5.4.1-create-http-api/">
+     <b> 5.4.1. </b> Tạo HTTP API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.4-api-gateway-integration/5.4.2-integrate-lambda/"
+  title="Gắn API với Lambda"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.4-api-gateway-integration/5.4.2-integrate-lambda/">
+     <b> 5.4.2. </b> Gắn API với Lambda 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.5-testing-and-logs/"
+  title="Kiểm thử"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.5-testing-and-logs/">
+     <b> 5.5. </b> Kiểm thử 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/vi/5-workshop/5.6-cleanup/"
+  title="Dọn dẹp tài nguyên"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Dọn dẹp tài nguyên 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/vi/6-self-evaluation/"
+  title="Tự đánh giá"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/6-self-evaluation/">
+     <b> 6. </b> Tự đánh giá 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/vi/7-feedback/"
+  title="Chia sẻ, đóng góp ý kiến"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../../vi/7-feedback/">
+     <b> 7. </b> Chia sẻ, đóng góp ý kiến 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://phamvunhatminh.github.io/AWS-FCJ-Workshop/3-blogstranslated/3.3-blog3/"
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://phamvunhatminh.github.io/AWS-FCJ-Workshop/vi/3-blogstranslated/3.3-blog3/"
+                  selected
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../../vi/'>Báo cáo thực tập</a> > <a href='../../../vi/3-blogstranslated/'>Các bài blogs đã dịch</a> > Blog 3
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#donnie-prakoso">Donnie Prakoso</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 3
+            </h1>
+          
+
+        
+
+
+
+	<h1 id="aws-news-blog"><a href="https://aws.amazon.com/blogs/aws/"><strong>AWS News Blog</strong></a></h1>
+<h1 id="hiện-đã-mở--khu-vực-aws-châu-á-thái-bình-dương-new-zealand"><strong>Hiện đã mở — Khu vực AWS Châu Á Thái Bình Dương (New Zealand)</strong></h1>
+<p>Bởi Donnie Prakoso | ngày 01 THÁNG 9 NĂM 2025 | trong mục <a href="https://aws.amazon.com/blogs/aws/category/post-types/announcements/">Announcements</a>, <a href="https://aws.amazon.com/blogs/aws/category/news/">News</a>, <a href="https://aws.amazon.com/blogs/aws/category/regions/">Regions</a>  | <a href="https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-new-zealand-region/">Permalink</a> | <a href="https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-new-zealand-region/#Comments">Comments</a> | <a href="https://aws.amazon.com/blogs/aws/now-open-aws-asia-pacific-new-zealand-region/">Share</a></p>
+<p><a href="https://d2908q01vomqb2.cloudfront.net/polly/da4b9237bacccdf19c0760cab7aec4a8359010b0amazon_polly_98893.mp3?version=1756764561">Audio</a> (Voiced by Amazon Polly)</p>
+<p>Kia ora! Hôm nay, tôi rất vui được chia sẻ về việc <a href="https://aws.amazon.com/local/new-zealand/"><strong>AWS Asia Pacific (New Zealand) Region</strong></a> đã chính thức ra mắt, bao gồm ba Availability Zones và tên API là ap-southeast-6. Với Region mới này, khách hàng giờ đây có thể chạy workloads và lưu trữ dữ liệu một cách an toàn tại New Zealand, đồng thời phục vụ người dùng cuối với độ trễ thấp hơn nữa.</p>
+<p><img src="../../../images/3-BlogsTranslated/blog3/1.jpg" alt=""></p>
+<p>Khu vực AWS Asia Pacific (New Zealand) mới sẽ giúp các tổ chức vận hành ứng dụng của họ và phục vụ người dùng cuối đồng thời duy trì việc lưu trữ dữ liệu tại New Zealand. Khoản đầu tư 7,5 tỷ NZD của Amazon Web Services (AWS) để thành lập một AWS Region tại New Zealand dự kiến sẽ đóng góp 10,8 tỷ NZD vào tổng sản phẩm quốc nội (GDP) của New Zealand, ước tính tạo ra 1.000 việc làm mới mỗi năm, và sẽ giúp các tổ chức tại New Zealand ở mọi quy mô có thể đổi mới và mở rộng nhanh hơn nhờ vào cơ sở hạ tầng an toàn và linh hoạt nhất.</p>
+<p><strong>AWS tại New Zealand</strong><br>
+Kể từ khi chúng tôi mở văn phòng đầu tiên tại New Zealand vào năm 2013, chúng tôi đã không ngừng mở rộng cơ sở hạ tầng để phục vụ khách hàng tại New Zealand tốt hơn:</p>
+<p><strong>Kết nối với mạng lưới toàn cầu của AWS</strong> – Năm 2016, AWS đã nâng cao khả năng kết nối của New Zealand với <a href="https://aws.amazon.com/about-aws/global-infrastructure/">AWS Global Infrastructure</a> bằng cách thiết lập <a href="https://aws.amazon.com/blogs/architecture/new-zealand-internet-connectivity-to-aws/">các kết nối cáp quang biển</a> đa dạng, dung lượng cao, giúp cải thiện độ tin cậy và hiệu năng mạng cho khách hàng.</p>
+<p><a href="https://aws.amazon.com/cloudfront/"><strong>Amazon CloudFront</strong></a> – Năm 2020, AWS đã mở rộng hạ tầng của mình tại New Zealand bằng cách bổ sung hai Amazon CloudFront edge locations tại Auckland.</p>
+<p><a href="https://aws.amazon.com/about-aws/global-infrastructure/localzones/"><strong>AWS Local Zones</strong></a> – Để tiếp tục nâng cao các dịch vụ hạ tầng của mình tại New Zealand, AWS đã giới thiệu một AWS Local Zone tại Auckland vào năm 2023, giúp khách hàng triển khai các ứng dụng yêu cầu độ trễ ở mức mili-giây một con số.</p>
+<p><a href="https://aws.amazon.com/directconnect/"><strong>AWS Direct Connect</strong></a> – Cũng trong năm đó, AWS đã bổ sung một Direct Connect location tại Auckland nhằm giúp khách hàng kết nối an toàn mạng on-premises của họ với AWS, qua đó giảm chi phí mạng và cải thiện hiệu năng ứng dụng. Với việc ra mắt Region này, AWS đang bổ sung thêm một Direct Connect location khác tại Auckland.</p>
+<p>Hãy cùng xem cách các khách hàng của AWS đang tận dụng các khả năng của AWS để đáp ứng những nhu cầu đa dạng.</p>
+<p><strong>Bảo mật và tuân thủ</strong><br>
+Chính phủ New Zealand có chính sách cloud first nhằm khuyến khích việc áp dụng điện toán đám mây trong toàn bộ khu vực công. AWS hỗ trợ 143 tiêu chuẩn và chứng nhận bảo mật, tuân thủ, bao gồm Payment Card Industry Data Security Standard (PCI DSS), Health Insurance Portability and Accountability Act (HIPAA), Health Information Technology for Economic and Clinical Health (HITECH), Federal Risk and Authorization Management Program (FedRAMP), General Data Protection Regulation (GDPR), Federal Information Processing Standard (FIPS) 140-3, và National Institute of Standards and Technology (NIST) 800-171, giúp khách hàng đáp ứng các yêu cầu tuân thủ trên toàn cầu và cung cấp một cơ sở hạ tầng đám mây an toàn.</p>
+<p><a href="https://mattr.global/">MATTR</a>, một tổ chức có trụ sở tại New Zealand cung cấp các dịch vụ hạ tầng và niềm tin kỹ thuật số cho doanh nghiệp và chính phủ, nhận thấy nhiều lợi ích đáng kể từ Region mới này. Để tìm hiểu thêm về cách MATTR và các tổ chức khác như Kiwibank và Deloitte dự định sử dụng AWS New Zealand Region, hãy truy cập <a href="https://www.aboutamazon.com.au/news/aws/kiwibank-mattr-and-deloitte-sign-up-to-use-aws-new-zealand-region-at-launch">bài viết tin tức này</a>.</p>
+<p><strong>Thúc đẩy đổi mới AI tại New Zealand</strong><br>
+AWS cung cấp bộ năng lực toàn diện nhất cho generative AI ở mọi lớp của stack, bao gồm tùy chọn các mô hình ngôn ngữ lớn (LLMs) tiên tiến để triển khai <a href="https://aws.amazon.com/generative-ai/">generative AI</a> với <a href="https://aws.amazon.com/bedrock/">Amazon Bedrock</a>, và trợ lý generative AI mạnh mẽ nhất <a href="https://aws.amazon.com/q/">Amazon Q</a> giúp thay đổi cách con người làm việc.</p>
+<p>Khách hàng tại New Zealand hiện đã và đang hưởng lợi từ các khả năng generative AI do AWS cung cấp.</p>
+<p><a href="https://www.thematic.com/">Thematic</a> là một công ty có trụ sở tại New Zealand, dẫn đầu toàn cầu trong lĩnh vực phân tích phản hồi và trí tuệ khách hàng. Thematic sử dụng generative AI để biến dữ liệu phản hồi của khách hàng từ nhiều kênh khác nhau thành thông tin khách hàng được chọn lọc, chính xác và đáng tin cậy.</p>
+<p>“Sử dụng Amazon Bedrock thật sự vô cùng dễ dàng, và điều đó hoàn toàn hợp lý. Mỗi khi chúng tôi thiết kế một giải pháp, chúng tôi thường thử nghiệm hơn 10 mô hình ngôn ngữ lớn (LLMs). Liên tục, các mô hình được cung cấp bởi AWS luôn giành chiến thắng trong các bài kiểm tra đó,” ông Nathan Holmberg, CTO và Đồng sáng lập của Thematic, cho biết.</p>
+<p>Để tìm hiểu thêm về những khách hàng khác như One NZ đã tận dụng generative AI, hãy truy cập <a href="https://www.aboutamazon.com.au/news/aws/vector-one-nz-and-datacom-to-leverage-aws-new-zealand-region-at-launch">bài viết này</a>.</p>
+<p><strong>Cùng xây dựng kỹ năng đám mây</strong><br>
+Kể từ khi ký <a href="https://www.aboutamazon.com.au/news/aws/new-zealand-government-and-amazon-web-services-collaborate-to-advance-digital-transformation-and-economic-growth-in-aotearoa-new-zealand">biên bản ghi nhớ (MoU)</a> với chính phủ New Zealand vào năm 2022, Amazon đã đào tạo hơn 50.000 người dân New Zealand (Kiwis) hướng tới mục tiêu 100.000 người. Amazon cam kết tiếp tục đầu tư vào giáo dục điện toán đám mây thông qua các chương trình như <a href="https://aws.amazon.com/training/awsacademy/">AWS Academy,</a> <a href="https://skillsbuilder.aws/">AWS Skills Builder</a>, <a href="https://aws.amazon.com/education/awseducate/">AWS Educate</a>, và <a href="https://aws.amazon.com/training/restart/">AWS re/Start</a>. Các tổ chức đang sử dụng AWS để mở rộng quy mô toàn cầu đồng thời đầu tư phát triển nhân tài địa phương, đáp ứng nhu cầu ngày càng tăng về chuyên môn đám mây tại New Zealand.</p>
+<p><a href="https://www.xero.com/">Xero</a>, một nền tảng toàn cầu dành cho doanh nghiệp nhỏ, giúp khách hàng tăng tốc phát triển doanh nghiệp bằng cách tích hợp các công cụ quan trọng nhất cho doanh nghiệp nhỏ, bao gồm kế toán, bảng lương và thanh toán — tất cả trên một nền tảng duy nhất. Tận dụng AWS từ năm 2016, Xero đã mở rộng nền tảng của mình ra toàn cầu, nâng cao các tính năng và thúc đẩy đổi mới liên tục.</p>
+<p>“Cam kết của Amazon đối với ngành công nghệ New Zealand thông qua khoản đầu tư 7,5 tỷ NZD là một tín hiệu đầy hứa hẹn. Đây là một sự thể hiện niềm tin mạnh mẽ, sẽ giúp kết nối các nhà xuất khẩu công nghệ của New Zealand với những cơ hội toàn cầu mới trong hệ sinh thái AWS và mạng lưới rộng lớn hơn của Amazon,” bà Bridget Snelling, Xero Country Manager, Aotearoa New Zealand, cho biết.</p>
+<p><strong>Chuyển đổi số bền vững</strong><br>
+Thông qua <a href="https://www.aboutamazon.com/planet/climate-pledge">The Climate Pledge</a>, Amazon cam kết đạt mức phát thải carbon ròng bằng 0 trên toàn bộ hoạt động kinh doanh vào năm 2040. AWS cũng cam kết hỗ trợ mục tiêu phát triển bền vững của New Zealand bằng việc vận hành các trung tâm dữ liệu hiệu quả và có trách nhiệm tại quốc gia này. AWS Asia Pacific (New Zealand) Region được cung cấp năng lượng tái tạo ngay từ ngày đầu tiên thông qua thỏa thuận với Mercury New Zealand.</p>
+<p>Các công ty năng lượng đang sử dụng AWS để hiện đại hóa hoạt động đồng thời thúc đẩy các mục tiêu phát triển bền vững. <a href="https://www.sharesies.nz/">Sharesies</a>, một nền tảng phát triển tài chính, đang sử dụng AWS để hiện đại hóa vận hành trong khi vẫn tiến tới mục tiêu bền vững.</p>
+<p>“Sharesies hoàn toàn ủng hộ việc lưu trữ dữ liệu khách hàng trong nước và khả năng sử dụng năng lượng tái tạo,” ông Richard Clark, Giám đốc Kỹ thuật (CTO) của Sharesies, cho biết. “Được thực hiện điều này tại New Zealand trên AWS Cloud và hoàn toàn sử dụng năng lượng gió của Mercury là một bước tiến lớn — và vô cùng phấn khích!”</p>
+<p><strong>Đối tác AWS tại New Zealand</strong><br>
+AWS Partner Network (APN) tại New Zealand bao gồm một hệ sinh thái đang phát triển của các đối tác tư vấn và công nghệ, giúp khách hàng ở mọi quy mô thiết kế, kiến trúc, xây dựng, di chuyển và quản lý workloads trên AWS. Các AWS Partners như <a href="https://customd.com/">Custom D</a>, <a href="https://www.grantthornton.co.nz/">Grant Thornton Digital</a>, <a href="https://www.mongodb.com/">MongoDB</a>, và <a href="https://www.parallo.com/">Parallo</a> đang tích cực hỗ trợ khách hàng triển khai các giải pháp sáng tạo phù hợp với nhu cầu đặc thù của các tổ chức tại New Zealand trong nhiều lĩnh vực khác nhau. Với Region mới này, các đối tác đó giờ đây có thể tận dụng toàn bộ năng lực của các dịch vụ AWS Cloud ngay tại địa phương.</p>
+<p><strong>Cộng đồng AWS tại New Zealand</strong><br>
+New Zealand hiện cũng là nơi có 1 AWS Hero, 26 AWS Community Builders, 6 AWS User Groups, và gần 9.000 thành viên cộng đồng trên toàn bộ AWS User Groups tại Auckland, Wellington và Christchurch. Nếu bạn quan tâm đến việc tham gia AWS User Groups New Zealand, hãy truy cập trang <a href="https://www.meetup.com/awsugakl/">Meetup</a> và các kênh mạng xã hội của họ.</p>
+<p>Đây là chia sẻ của AWS Hero <a href="https://builder.aws.com/community/@devopswithzack">Arshad Zackeriya</a> về Region mới:<br>
+“Việc ra mắt AWS Region tại New Zealand là một bước ngoặt lớn đối với đất nước chúng ta. Đây không chỉ đơn giản là sự xuất hiện của một loạt data centers mới; mà là việc mở khóa tiềm năng của các doanh nghiệp và cộng đồng lập trình viên tại New Zealand, cho phép chúng ta xây dựng một Aotearoa tốt đẹp hơn, kết nối hơn, cho tất cả mọi người.”</p>
+<p><strong>Hiện đã khả dụng</strong><br>
+AWS Asia Pacific (New Zealand) Region là Region hạ tầng đầu tiên tại New Zealand và là Region thứ mười sáu trong khu vực Châu Á Thái Bình Dương. Với lần ra mắt này, AWS hiện có tổng cộng 120 Availability Zones trong 38 Region địa lý trên toàn cầu, cùng kế hoạch đã công bố về 10 Availability Zones và 3 AWS Regions mới tại Vương quốc Ả Rập Xê Út, Chile, và European Sovereign Cloud.</p>
+<p><a href="https://aws.amazon.com/local/new-zealand/">Region Asia Pacific (New Zealand)</a> mới đã sẵn sàng để hỗ trợ doanh nghiệp của bạn, và bạn có thể tìm danh sách chi tiết các dịch vụ khả dụng trong Region này tại trang <a href="https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/">AWS Services by Region</a>.<br>
+Để tìm hiểu thêm, hãy truy cập trang <a href="https://aws.amazon.com/about-aws/global-infrastructure/">AWS Global Infrastructure</a> và bắt đầu xây dựng trên ap-southeast-6!</p>
+<p>Chúc bạn xây dựng thật vui vẻ!<br>
+— <a href="https://linkedin.com/in/donnieprakoso">Donnie</a></p>
+<h3 id="donnie-prakoso"><a href="https://aws.amazon.com/blogs/aws/author/donnie/">Donnie Prakoso</a></h3>
+<p><img src="../../../images/3-BlogsTranslated/blog3/2.jpg" alt="image">
+Donnie Prakoso là một <strong>software engineer</strong>, một <strong>barista tự phong</strong>, và <strong>Principal Developer Advocate</strong> tại <strong>AWS</strong>. Anh có hơn 17 năm kinh nghiệm trong ngành công nghệ, từ <strong>telecommunications</strong>, <strong>banking</strong> đến <strong>startups</strong>. Hiện tại, anh tập trung vào việc giúp các <strong>developers</strong> hiểu và áp dụng nhiều công nghệ khác nhau để biến ý tưởng thành hiện thực. Anh yêu thích cà phê và mọi cuộc thảo luận về các chủ đề từ <strong>microservices</strong> đến <strong>AI/ML</strong>.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../../vi/3-blogstranslated/3.2-blog2/" title="Blog 2"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../../vi/4-eventparticipated/" title="Các events đã tham gia" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../../js/clipboard.min.js?1765283266"></script>
+    <script src="../../../js/perfect-scrollbar.min.js?1765283266"></script>
+    <script src="../../../js/perfect-scrollbar.jquery.min.js?1765283266"></script>
+    <script src="../../../js/jquery.sticky.js?1765283266"></script>
+    <script src="../../../js/featherlight.min.js?1765283266"></script>
+    <script src="../../../js/highlight.pack.js?1765283266"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../../js/modernizr.custom-3.6.0.js?1765283266"></script>
+    <script src="../../../js/learn.js?1765283266"></script>
+    <script src="../../../js/hugo-learn.js?1765283266"></script>
+
+    <link href="../../../mermaid/mermaid.css?1765283266" rel="stylesheet" />
+    <script src="../../../mermaid/mermaid.js?1765283266"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>

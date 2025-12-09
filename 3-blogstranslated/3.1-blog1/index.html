@@ -1,0 +1,1762 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.151.0">
+    <meta
+  name="description"
+  content=""
+/>
+<meta name="author" content="nhatminhob@gmail.com" />
+
+    <link rel="icon" href="../../images/favicon.png" type="image/png">
+
+    <title>Blog 1 :: Internship Report</title>
+
+    
+    <link href="../../css/nucleus.css?1765283266" rel="stylesheet">
+    <link href="../../css/fontawesome-all.min.css?1765283266" rel="stylesheet">
+    <link href="../../css/hybrid.css?1765283266" rel="stylesheet">
+    <link href="../../css/featherlight.min.css?1765283266" rel="stylesheet">
+    <link href="../../css/perfect-scrollbar.min.css?1765283266" rel="stylesheet">
+    <link href="../../css/auto-complete.css?1765283266" rel="stylesheet">
+    <link href="../../css/atom-one-dark-reasonable.css?1765283266" rel="stylesheet">
+    <link href="../../css/theme.css?1765283266" rel="stylesheet">
+    <link href="../../css/hugo-theme.css?1765283266" rel="stylesheet">
+    
+    <link href="../../css/theme-workshop.css?1765283266" rel="stylesheet">
+    
+    
+
+    <script src="../../js/jquery-3.3.1.min.js?1765283266"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+
+  </head>
+  <body class="" data-url="../../3-blogstranslated/3.1-blog1/">
+    <nav
+  id="sidebar"
+  class="showVisitedLinks"
+>
+   
+  <div id="header-wrapper">
+    <div id="header"><a id="logo" href="../../">
+  <svg
+    id="Layer_1"
+    data-name="Layer 1"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 60 30"
+    width="30%"
+  >
+    <defs>
+      <style>
+        .cls-1 {
+          fill: #fff;
+        }
+        .cls-2 {
+          fill: #f90;
+          fill-rule: evenodd;
+        }
+      </style>
+    </defs>
+    <title>AWS-Logo_White-Color</title>
+    <path
+      class="cls-1"
+      d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"
+    ></path>
+    <path
+      class="cls-2"
+      d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"
+    ></path>
+  </svg>
+</a>
+</div>
+     <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="../../js/lunr.min.js?1765283266"></script>
+<script type="text/javascript" src="../../js/auto-complete.js?1765283266"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/phamvunhatminh.github.io\/AWS-FCJ-Workshop\/";
+    
+</script>
+<script type="text/javascript" src="../../js/search.js?1765283266"></script>
+ 
+  </div>
+
+  <div class="highlightable">
+    <ul class="topics">
+               
+<li
+  data-nav-id="/1-worklog/"
+  title="Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/">
+     <b> 1. </b> Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/1-worklog/1.1-week1/"
+  title="Week 1 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.1-week1/">
+     <b> 1.1. </b> Week 1 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.2-week2/"
+  title="Week 2 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.2-week2/">
+     <b> 1.2. </b> Week 2 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.3-week3/"
+  title="Week 3 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.3-week3/">
+     <b> 1.3. </b> Week 3 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.4-week4/"
+  title="Week 4 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.4-week4/">
+     <b> 1.4. </b> Week 4 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.5-week5/"
+  title="Week 5 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.5-week5/">
+     <b> 1.5. </b> Week 5 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.6-week6/"
+  title="Week 6 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.6-week6/">
+     <b> 1.6. </b> Week 6 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.7-week7/"
+  title="Week 7 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.7-week7/">
+     <b> 1.7. </b> Week 7 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.8-week8/"
+  title="Week 8 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.8-week8/">
+     <b> 1.8. </b> Week 8 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.9-week9/"
+  title="Week 9 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.9-week9/">
+     <b> 1.9. </b> Week 9 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.10-week10/"
+  title="Week 10 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.10-week10/">
+     <b> 1.10. </b> Week 10 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.11-week11/"
+  title="Week 11 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.11-week11/">
+     <b> 1.11. </b> Week 11 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/1-worklog/1.12-week12/"
+  title="Week 12 Worklog"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../1-worklog/1.12-week12/">
+     <b> 1.12. </b> Week 12 Worklog 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/2-proposal/"
+  title="Proposal"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/">
+     <b> 2. </b> Proposal 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/2-proposal/2.1-attachments/"
+  title="Appendix &amp; Attachments"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../2-proposal/2.1-attachments/">
+     <b> 2.1. </b> Appendix &amp; Attachments 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/3-blogstranslated/"
+  title="Translated Blogs"
+  class="dd-item 
+        parent
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/">
+     <b> 3. </b> Translated Blogs 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/3-blogstranslated/3.1-blog1/"
+  title="Blog 1"
+  class="dd-item 
+        
+        active
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.1-blog1/">
+     <b> 3.1. </b> Blog 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.2-blog2/"
+  title="Blog 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.2-blog2/">
+     <b> 3.2. </b> Blog 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/3-blogstranslated/3.3-blog3/"
+  title="Blog 3"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../3-blogstranslated/3.3-blog3/">
+     <b> 3.3. </b> Blog 3 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/4-eventparticipated/"
+  title="Events Participated"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/">
+     <b> 4. </b> Events Participated 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/4-eventparticipated/4.1-event1/"
+  title="Event 1"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.1-event1/">
+     <b> 4.1. </b> Event 1 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/4-eventparticipated/4.2-event2/"
+  title="Event 2"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../4-eventparticipated/4.2-event2/">
+     <b> 4.2. </b> Event 2 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/5-workshop/"
+  title="Workshop"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/">
+     <b> 5. </b> Workshop 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.1-workshop-overview/"
+  title="Introduction"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.1-workshop-overview/">
+     <b> 5.1. </b> Introduction 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.2-prerequisite/"
+  title="Prerequisites"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.2-prerequisite/">
+     <b> 5.2. </b> Prerequisites 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-create-lambda-and-bedrock-call/"
+  title="Create Lambda and Call Bedrock"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-create-lambda-and-bedrock-call/">
+     <b> 5.3. </b> Create Lambda and Call Bedrock 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.1-create-lambda/"
+  title="Create Lambda Function"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-create-lambda-and-bedrock-call/5.3.1-create-lambda/">
+     <b> 5.3.1. </b> Create Lambda Function 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.2-call-bedrock-converse/"
+  title="Add Code to Call the Converse API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-create-lambda-and-bedrock-call/5.3.2-call-bedrock-converse/">
+     <b> 5.3.2. </b> Add Code to Call the Converse API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.3-create-lambda-and-bedrock-call/5.3.3-test-lambda/"
+  title="Test Lambda Function"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.3-create-lambda-and-bedrock-call/5.3.3-test-lambda/">
+     <b> 5.3.3. </b> Test Lambda Function 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-api-gateway-integration/"
+  title="Create API Gateway"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-api-gateway-integration/">
+     <b> 5.4. </b> Create API Gateway 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+  <ul>
+          
+            
+<li
+  data-nav-id="/5-workshop/5.4-api-gateway-integration/5.4.1-create-http-api/"
+  title="Create HTTP API"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-api-gateway-integration/5.4.1-create-http-api/">
+     <b> 5.4.1. </b> Create HTTP API 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.4-api-gateway-integration/5.4.2-integrate-lambda/"
+  title="Integrate API with Lambda"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.4-api-gateway-integration/5.4.2-integrate-lambda/">
+     <b> 5.4.2. </b> Integrate API with Lambda 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.5-testing-and-logs/"
+  title="Testing"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.5-testing-and-logs/">
+     <b> 5.5. </b> Testing 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+            
+<li
+  data-nav-id="/5-workshop/5.6-cleanup/"
+  title="Cleanup Resources"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../5-workshop/5.6-cleanup/">
+     <b> 5.6. </b> Cleanup Resources 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+     
+  </ul>
+  
+</li>
+           
+<li
+  data-nav-id="/6-self-evaluation/"
+  title="Self-Assessment"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../6-self-evaluation/">
+     <b> 6. </b> Self-Assessment 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+           
+<li
+  data-nav-id="/7-feedback/"
+  title="Sharing and Feedback"
+  class="dd-item 
+        
+        
+        
+        "
+>
+  <a href="../../7-feedback/">
+     <b> 7. </b> Sharing and Feedback 
+    <i class="fas fa-check read-icon"></i>
+    
+  </a>
+   
+</li>
+    
+    </ul>
+
+     
+    <section id="shortcuts">
+      <h3>
+        More
+      </h3>
+      <ul>
+        
+        <li>
+          <a class="padding" href="https://www.facebook.com/groups/awsstudygroupfcj/"
+            ><i class='fab fa-facebook'></i> AWS Study Group</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+     
+    <section id="prefooter">
+      <hr />
+      <ul>
+        
+        <li>
+          <a class="padding">
+            <i class="fas fa-language fa-fw"></i>
+            <div class="select-style">
+              <select id="select-language" onchange="location = this.value;">
+                       
+                <option
+                  id="en"
+                  value="https://phamvunhatminh.github.io/AWS-FCJ-Workshop/3-blogstranslated/3.1-blog1/"
+                  selected
+                >
+                  English
+                </option>
+                            
+                <option
+                  id="vi"
+                  value="https://phamvunhatminh.github.io/AWS-FCJ-Workshop/vi/3-blogstranslated/3.1-blog1/"
+                >
+                  Tiếng Việt
+                </option>
+                   
+              </select>
+              <svg
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="255px"
+                height="255px"
+                viewBox="0 0 255 255"
+                style="enable-background: new 0 0 255 255"
+                xml:space="preserve"
+              >
+                <g>
+                  <g id="arrow-drop-down">
+                    <polygon points="0,63.75 127.5,191.25 255,63.75 		" />
+                  </g>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </li>
+         
+        <li>
+          <a class="padding" href="#" data-clear-history-toggle=""
+            ><i class="fas fa-history fa-fw"></i> Clear History</a
+          >
+        </li>
+        
+      </ul>
+    </section>
+    
+    <section id="footer"><left>
+    
+    <b> Workshop</b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7920860&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Migrate" Alt="web counter" border="0" /></a> <br>
+    <b> <a href="https://cloudjourney.awsstudygroup.com/">Cloud Journey</a></b> <br>
+    <img src="https://hitwebcounter.com/counter/counter.php?page=7830807&style=0038&nbdigits=9&type=page&initCount=0"
+        title="Total CLoud Journey" Alt="web counter" border="0" />
+
+</left>
+<left>
+    <br>
+    <br>
+    <b>Last Updated</b><br>
+    <i>
+        <span id="lastUpdated" style="color:orange;"></span>
+    </i>
+
+    <script>
+        
+        const today = new Date();
+        
+        const formattedDate = today.toLocaleDateString('en-GB');
+        
+        document.getElementById('lastUpdated').textContent = formattedDate;
+    </script>
+</left>
+<left>
+    <br>
+    <br>
+    <b> Team </b> <br>
+
+    <i> <a href="https://www.facebook.com/groups/660548818043427" style="color:orange">First Cloud Journey </a> <br>
+
+    </i>
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script></section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='../../'>Internship Report</a> > <a href='../../3-blogstranslated/'>Translated Blogs</a> > Blog 1
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+  <div class="wrapper"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#aws-storage-blog"><strong>AWS Storage Blog</strong></a>
+      <ul>
+        <li><a href="#1-what-should-go-into-the-vault">1. What should go into the vault?</a></li>
+        <li><a href="#2-what-will-recovery-look-like">2. What will recovery look like?</a></li>
+        <li><a href="#3-how-should-the-vault-be-segmented">3. How should the vault be segmented?</a></li>
+        <li><a href="#4-how-should-the-vault-be-administered">4. How should the vault be administered?</a></li>
+        <li><a href="#5-how-do-we-plan-for-logistics-and-service-providers">5. How do we plan for logistics and service providers?</a></li>
+        <li><a href="#6-who-is-responsible-for-the-vaulting-process">6. Who is responsible for the vaulting process?</a></li>
+        <li><a href="#7-why-is-sponsorship-needed">7. Why is sponsorship needed?</a></li>
+        <li><a href="#getting-started-with-aws">Getting started with AWS</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#tom-tasker">Tom Tasker</a></li>
+        <li><a href="#danny-johnston">Danny Johnston</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav></div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Blog 1
+            </h1>
+          
+
+        
+
+
+
+	<h2 id="aws-storage-blog"><strong>AWS Storage Blog</strong></h2>
+<p>Resilience by Design: Building an Effective Ransomware Recovery Strategy</p>
+<p>By Tom Tasker and Danny Johnston | on 02 SEP 2025 | in <a href="https://aws.amazon.com/blogs/storage/category/storage/amazon-fsx-netapp-ontap/">Amazon FSx for NetApp ONTAP</a>, <a href="https://aws.amazon.com/blogs/storage/category/security-identity-compliance/amazon-macie/">Amazon GuardDuty</a>, <a href="https://aws.amazon.com/blogs/storage/category/storage/amazon-simple-storage-services-s3/">Amazon Macie</a>, <a href="https://aws.amazon.com/blogs/storage/category/storage/amazon-simple-storage-services-s3/">Amazon Simple Storage Service (S3)</a>, <a href="https://aws.amazon.com/blogs/storage/category/storage/aws-backup/">AWS Backup</a>, <a href="https://aws.amazon.com/blogs/storage/category/storage/aws-elastic-disaster-recovery-drs/">AWS Elastic Disaster Recovery (DRS)</a>, <a href="https://aws.amazon.com/blogs/storage/category/post-types/best-practices/">Best Practices</a>, <a href="https://aws.amazon.com/blogs/storage/category/learning-levels/foundational-100/">Foundational (100)</a>, <a href="https://aws.amazon.com/blogs/storage/category/post-types/thought-leadership/">Thought Leadership</a> | <a href="https://aws.amazon.com/blogs/storage/resilience-by-design-building-an-effective-ransomware-recovery-strategy/"><strong>Permalink</strong></a> | <a href="https://aws.amazon.com/blogs/storage/resilience-by-design-building-an-effective-ransomware-recovery-strategy/#Comments"><strong>Comments</strong></a> | <a href="https://aws.amazon.com/blogs/storage/resilience-by-design-building-an-effective-ransomware-recovery-strategy/"><strong>Share</strong></a></p>
+<p>Ransomware incidents have become a priority topic in leadership meetings of modern organizations. Data shows a clear trend: the number of ransomware incidents has more than doubled since the pandemic began, with the financial services sector being particularly targeted. At AWS, our cross‑disciplinary collaboration with global financial services customers, regulators, operational organizations, and industry partners has resulted in a certified architecture for the <a href="https://aws.amazon.com/blogs/industries/building-a-sheltered-harbor-compliant-data-vault-on-aws/"><strong>Cloud Hosted Data Vault (CHDV)</strong></a>, commonly referred to simply as “the vault.”</p>
+<p>The vault is a key element for strengthening operational resilience against large‑scale cyber incidents. It acts as a completely isolated last line of defense, protecting the most mission‑critical assets of your organization. It enables your business to recover when traditional mechanisms like High Availability (HA), Business Continuity (BC), Disaster Recovery (DR), and backups no longer guarantee recovery. Integrating the vault into your existing resilience practices requires careful planning across multiple dimensions. In this article, we’ll look at the planning considerations and how you can add protective layers to your existing HA, BC/DR, and backup solutions. We’ll also address the key factors not only in technology implementation but also in people, process, and practical aspects that make the vault effective as a complete solution.</p>
+<h3 id="1-what-should-go-into-the-vault">1. What should go into the vault?</h3>
+<p>Every business unit owner may say “everything, everywhere” needs to be protected. In reality, that’s not feasible — at least not immediately. When considering a large‑scale cyber incident, it’s easy to assume that all data, applications, and services are critical and must be vaulted. You might think that if a component exists in production, it must be necessary. However, trying to vault everything without a proper upfront review can lead to massive data volumes, high costs, and unintended recovery latency.</p>
+<p>In a real cyber incident, ask yourself: what are the core IT functions and operational services you need to restart business operations in the next 12, 24, or 48 hours — and just as importantly, what is not necessary? These core functions and services are often referred to as the Minimum Viable Business (MVB) — the minimum required for the business to continue operating. They include not only services for your customers but also for your second‑, third‑, and fourth‑party partners.</p>
+<p><img src="../../images/3-BlogsTranslated/blog1/1.png" alt="a diagram showing what needs to be vaulted: data, applications, machine images, configs, and recovery plans"></p>
+<p><em>Figure 1: What belongs in the vault — focus on core IT functions and operational services.</em></p>
+<p>This question cannot be answered overnight. The vault is not just a technology solution — it requires engagement from multiple departments. Defining your MVB and how best to protect it depends on the combined input, experience, and knowledge from many groups: IT, security, legal, business unit owners, application owners, and senior leadership.</p>
+<h3 id="2-what-will-recovery-look-like">2. What will recovery look like?</h3>
+<p>Cyber incidents are designed to make recovering your systems or services difficult — even nearly impossible — through standard operational recovery mechanisms like HA, BC, DR, and backups. Attackers aim to maximize disruption with minimal recoverability to force victims to pay ransom.</p>
+<p>A large‑scale cyber incident cannot rely solely on traditional operational recovery methods, so you must prepare the following key elements in advance to respond effectively.</p>
+<ul>
+<li><strong>Decision Time Objective (DTO):</strong> How long does it take to trigger recovery from the vault? Highly automated recovery processes in safe, reliable environments may have been compromised, becoming untrustworthy or unusable due to sabotage. It’s critical to coordinate people and decision points on when to initiate full or partial recovery from the vault.</li>
+<li><strong>Cyber‑Recovery Time Objective (C‑RTO)</strong> and <strong>Cyber‑Recovery Point Objective (C‑RPO):</strong> Adjust expectations on recovery time, considering increased impact and duration for cyber incidents. Processes that used to take seconds may now take days — plan accordingly.</li>
+<li><strong>Minimum Acceptable Service Offering (MASO):</strong> While MVB focuses on internal operations, MASO asks: what minimum level of service is acceptable to offer customers and third parties? This may include a limited subset of core functionality or a backup system accessed via alternative methods.</li>
+</ul>
+<p><img src="../../images/3-BlogsTranslated/blog1/2.png" alt="flowchart showing the path from ransomware detonation to minimum acceptable service offering"></p>
+<p><em>Figure 2: What recovery looks like — what once took seconds may now take days; plan ahead.</em></p>
+<h3 id="3-how-should-the-vault-be-segmented">3. How should the vault be segmented?</h3>
+<p>Whether you choose one vault for the entire system or separate vaults per service, it’s important to balance manageability, practicality, and security.</p>
+<ul>
+<li><strong>Simplicity:</strong> Keep vaults clear, understandable, easy to navigate, and easy to recover. Complexity only delays recovery.</li>
+<li><strong>Independence:</strong> Each vault should operate independently to reduce waiting time and increase parallelism during recovery.</li>
+<li><strong>Service mapping:</strong> Identify where recovery starts and what the optimal recovery order is.</li>
+<li><strong>Roles and responsibilities:</strong> Clearly assign owners and administrators per service, application, and infrastructure area.</li>
+<li><strong>Maintenance:</strong> The vault is not static — applications evolve and business use cases change over time.</li>
+</ul>
+<p><img src="../../images/3-BlogsTranslated/blog1/3.png" alt="flowchart showing how vaults are distributed"></p>
+<p><em>Figure 3: Vault segmentation — balance manageability, content, and recovery processes.</em></p>
+<p>The flexibility AWS provides is invaluable — you can experiment, fail, and iterate to find the optimal solution without accruing “technical debt” along the way. What seems feasible on the whiteboard may fail in the first test, and the lessons learned can be applied to the next vault iteration. Adapting flexibly to business needs increases confidence in both the solution and the recovery process. What goes into the vault is not just data; input from application owners and business units is equally essential.</p>
+<h3 id="4-how-should-the-vault-be-administered">4. How should the vault be administered?</h3>
+<p>Your vault must be isolated from the operational plane so any cyber incident spreading in production is stopped at the vault boundary. Without this separation, the vault can also be compromised.</p>
+<p>Traditional air‑gapped solutions often involve physical isolation such as unplugging connections or removing storage media, creating a literal “air gap” between the protective mechanism and the operational environment. How do we bring this isolation concept to the cloud and the vault? Re‑creating equivalent security controls in the cloud requires:</p>
+<ul>
+<li><strong>Access zones:</strong> Areas, services, and functions that exist only temporarily and are available only during authorized windows.</li>
+<li><strong>Multi‑factor authentication:</strong> Use physical tokens so only authorized personnel can access.</li>
+<li><strong>Zero trust:</strong> Authenticate at every step; do not assume any component is trusted by default.</li>
+<li><a href="https://aws.amazon.com/iam/"><strong>AWS Identity and Access Management (IAM)</strong></a>: Configure strictly limited roles and permissions to enforce least privilege.</li>
+<li><strong>Change management:</strong> Allow access to tokens and accounts only via formal approval processes.</li>
+</ul>
+<p><img src="../../images/3-BlogsTranslated/blog1/4.png" alt="chart showing vault administration"></p>
+<p><em>Figure 4: Vault administration — deliberate isolation while maintaining observability.</em></p>
+<h3 id="5-how-do-we-plan-for-logistics-and-service-providers">5. How do we plan for logistics and service providers?</h3>
+<p>Physical solutions are often overlooked when considering responses to cyber incidents. While focusing on core services, applications, and foundational infrastructure, we may ignore external physical dependencies that also play a critical role in recovery.</p>
+<p>Examples:</p>
+<ul>
+<li><strong>Internal and external network access:</strong> You don’t need a major disaster to cause disruption — network outages are enough to be serious issues.</li>
+<li><strong>Software repositories:</strong> Even with automated software distribution, maintain physical media (e.g., USB drives) ready for access without relying on digital infrastructure.</li>
+<li><strong>Supply chain:</strong> If physical equipment is completely damaged, have clear plans and processes to ship and deliver hardware to the right place in the right quantities.</li>
+<li><strong>Physical logistics:</strong> If a large‑scale incident requires a proportional response, how do you quickly allocate personnel, equipment, and workspace?</li>
+</ul>
+<p><img src="../../images/3-BlogsTranslated/blog1/5.png" alt="external dependencies on logistics and service providers"></p>
+<p><em>Figure 5: Logistics and service providers — broaden plans to include external dependencies.</em></p>
+<p>Attack sophistication can lie in causing multiple failures simultaneously that individually would be minor and predictable in normal operations. When these issues occur broadly at the same time, they compound, making remediation more complex and delayed.</p>
+<h3 id="6-who-is-responsible-for-the-vaulting-process">6. Who is responsible for the vaulting process?</h3>
+<p>People are responsible for managing and operating cyber vaulting, defining best practices, and leading recovery when needed. Choosing the responsible team is critical but not always straightforward.</p>
+<p>Vault principles reflect that it spans protection, planning, and process. It requires contributions from multiple stakeholders — it cannot come from a single group.</p>
+<p>Business stakeholders — not the backup team — should set recovery priorities based on system dependencies, compliance requirements, and business impact. Clear communication between technical and business teams is essential to build effective cyber incident recovery plans.</p>
+<p><img src="../../images/3-BlogsTranslated/blog1/6.png" alt="best practice for vaulting blends people and process"></p>
+<p><em>Figure 6: People and process — balancing both is foundational to best practices.</em></p>
+<p>This cross‑functional collaboration results in recovery plans your organization must adopt and follow. However, this can inadvertently create inefficient recovery scenarios if processes are too cumbersome, leading to poor adherence.</p>
+<p>Cumbersome procedures, lack of flexibility, and human tendency to choose the path of least resistance can prevent even good plans from being executed properly. While this may not immediately affect security or recovery, the worst time to discover vault principles aren’t being followed is when you need them most.</p>
+<p>To ensure effective recovery from cyber incidents, your organization must embed best practices into daily operations. This requires a careful balance between strong recovery requirements and practical, sustainable processes so teams can consistently adhere without undermining security or operational performance.</p>
+<h3 id="7-why-is-sponsorship-needed">7. Why is sponsorship needed?</h3>
+<p>Any additional work in an organization increases cost and effort and divides time and resources from other activities. No CFO will accept a technology solution that consumes time, money, and effort without generating revenue.</p>
+<p>The vault is not part of your core business operations. Its intrinsic value and purpose must be clearly understood. This can only be achieved with sponsorship and direction from the highest leadership — a top‑down commitment from the executive team.</p>
+<p><img src="../../images/3-BlogsTranslated/blog1/7.png" alt="top down sponsorship of data protection strategy is critical for success"></p>
+<p><em>Figure 7: Sponsorship — the top‑down approach aligns the entire organization.</em></p>
+<h3 id="getting-started-with-aws">Getting started with AWS</h3>
+<p>AWS provides multiple layers of defense against ransomware. To immediately protect data across many AWS data services, <a href="https://aws.amazon.com/backup/"><strong>AWS Backup</strong></a> offers centralized backup management with <a href="https://aws.amazon.com/blogs/storage/building-cyber-resiliency-with-aws-backup-logically-air-gapped-vault/">immutable backups</a> and logical isolation to prevent unauthorized modification and enable swift recovery. <a href="https://aws.amazon.com/blogs/storage/modern-data-protection-architecture-on-amazon-s3-part-1/"><strong>Amazon S3</strong> with <strong>versioning</strong> and <strong>Object Lock</strong></a>, along with <a href="https://aws.amazon.com/blogs/storage/meeting-record-compliance-requirements-using-snaplock-with-amazon-fsx-for-netapp-ontap/"><strong>Amazon FSx for NetApp ONTAP</strong></a>, create tamper‑resistant storage environments for critical data.</p>
+<p>For detection, <a href="https://aws.amazon.com/blogs/aws/introducing-amazon-guardduty-extended-threat-detection-aiml-attack-sequence-identification-for-enhanced-cloud-security/"><strong>Amazon GuardDuty</strong></a> monitors suspicious activity, while <a href="https://aws.amazon.com/security-hub/"><strong>AWS Security Hub</strong></a> provides a consolidated view of security posture. <a href="https://aws.amazon.com/blogs/security/use-amazon-macie-for-automatic-continual-and-cost-effective-discovery-of-sensitive-data-in-s3/"><strong>Amazon Macie</strong></a> identifies sensitive data that may be targeted, while <a href="https://aws.amazon.com/blogs/aws/aws-shield-advanced-update-automatic-application-layer-ddos-mitigation/"><strong>AWS Shield</strong></a> and <a href="https://aws.amazon.com/waf/"><strong>AWS WAF</strong></a> protect against DDoS and web exploits. <a href="https://aws.amazon.com/network-firewall/"><strong>AWS Network Firewall</strong></a> filters malicious traffic at the network layer. Partners like <a href="https://elastio.com/"><strong>elastio</strong></a> integrate with <a href="https://aws.amazon.com/blogs/apn/elastio-integrates-with-aws-backup-for-secure-backups-to-enhance-ransomware-defense/">AWS Backup</a> to verify data integrity near real‑time, enabling “clean” recovery with minimal downtime and data loss.</p>
+<p>For identity protection, <a href="https://aws.amazon.com/iam/"><strong>IAM</strong></a> enforces least privilege, while <a href="https://aws.amazon.com/organizations/"><strong>AWS Organizations</strong></a> centralizes security policy management across accounts. <a href="https://aws.amazon.com/config/"><strong>AWS Config</strong></a> and <a href="https://aws.amazon.com/cloudtrail/"><strong>AWS CloudTrail</strong></a> provide configuration change tracking and API activity auditing — essential for post‑incident forensics.</p>
+<h3 id="conclusion">Conclusion</h3>
+<p>Cyber incidents, especially ransomware, are increasing annually. Shifting from protecting against random failures to targeted attacks requires rapid organizational response to shrink the “risk window” — where a severe incident can cripple services or even halt business operations.</p>
+<p>Technology is only part of the equation. Proactive disruption planning is critical to eliminate flawed operational assumptions. A cyber incident is not a daily operation; plan and prepare so critical decisions aren’t made under duress.</p>
+<p>Strengthening cyber resilience requires an organization‑wide strategy. Start by defining what successful recovery means for your business, then plan for worst‑case scenarios with detailed playbooks. Continually iterate, test, and validate recovery processes to ensure they work when needed.</p>
+<p>Most importantly, cyber resilience extends beyond IT — it’s an enterprise‑wide challenge. Every function — operations, finance, leadership, and frontline staff — plays a role in building and executing resilience when incidents occur. Success depends on making cyber resilience a shared responsibility across the organization, from the CEO to system administrators.</p>
+<p>TAGS: <a href="https://aws.amazon.com/blogs/storage/tag/amazon-fsx-for-netapp-ontap/">Amazon FSx for NetApp ONTAP</a>, <a href="https://aws.amazon.com/blogs/storage/tag/amazon-simple-storage-service-amazon-s3/">Amazon Simple Storage Service (Amazon S3)</a>, <a href="https://aws.amazon.com/blogs/storage/tag/aws-backup/">AWS Backup</a>, <a href="https://aws.amazon.com/blogs/storage/tag/aws-cloud-storage/">AWS Cloud Storage</a>, <a href="https://aws.amazon.com/blogs/storage/tag/aws-elastic-disaster-recovery-drs/">AWS Elastic Disaster Recovery (DRS)</a></p>
+<h3 id="tom-tasker">Tom Tasker</h3>
+<p><img src="../../images/3-BlogsTranslated/blog1/8.jpg" alt="image">
+Tom is a Storage Solution Architect for Global Financial Services at Amazon Web Services. He works with some of the world’s largest and most influential financial services companies, regulators, and partners to drive solutions integrated and operated on AWS storage.</p>
+<h3 id="danny-johnston">Danny Johnston</h3>
+<p><img src="../../images/3-BlogsTranslated/blog1/9.jpg" alt="image">
+Danny leads the Global Financial Services Storage Business Development Team at Amazon Web Services. He is an experienced business development professional specializing in enterprise storage solutions, driving strategic partnerships with customers and regulators. He is passionate about helping financial services organizations optimize data infrastructure and accelerate digital transformation initiatives.</p>
+
+
+
+
+
+<footer class=" footline" >
+	
+</footer>
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="../../3-blogstranslated/" title="Translated Blogs"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="../../3-blogstranslated/3.2-blog2/" title="Blog 2" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="../../js/clipboard.min.js?1765283266"></script>
+    <script src="../../js/perfect-scrollbar.min.js?1765283266"></script>
+    <script src="../../js/perfect-scrollbar.jquery.min.js?1765283266"></script>
+    <script src="../../js/jquery.sticky.js?1765283266"></script>
+    <script src="../../js/featherlight.min.js?1765283266"></script>
+    <script src="../../js/highlight.pack.js?1765283266"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="../../js/modernizr.custom-3.6.0.js?1765283266"></script>
+    <script src="../../js/learn.js?1765283266"></script>
+    <script src="../../js/hugo-learn.js?1765283266"></script>
+
+    <link href="../../mermaid/mermaid.css?1765283266" rel="stylesheet" />
+    <script src="../../mermaid/mermaid.js?1765283266"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    <script>
+  (function (i, s, o, g, r, a, m) {
+    i["GoogleAnalyticsObject"] = r;
+    ((i[r] =
+      i[r] ||
+      function () {
+        (i[r].q = i[r].q || []).push(arguments);
+      }),
+      (i[r].l = 1 * new Date()));
+    ((a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]));
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(
+    window,
+    document,
+    "script",
+    "https://www.google-analytics.com/analytics.js",
+    "ga",
+  );
+
+  ga("create", "UA-158079754-2", "auto");
+  ga("send", "pageview");
+</script>
+
+  </body>
+</html>
